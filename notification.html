@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Notification</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230731092029">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container container">
+				<div class="header__inner">
+					<button type="button" class="icon-menu"><span></span></button>
+
+					<a class="header__logo logo" href="#">Tracker logo</a>
+
+					<div class="header__notification-box">
+						<button class="header__notification-btn">
+							<svg class="header__notification-icon" width="24px" height="24px">
+								<use xlink:href="img/icons/icons.svg#notification-bell"></use>
+							</svg>
+						</button>
+
+						<span class="header__notification-count" data-notification-count="2">2</span>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="page__container container">
+				<div class="page__inner">
+
+					<aside class="aside">
+						<div class="aside__inner">
+							<div class="aside__top">
+								<img class="aside__top-icon" src="img/common-icons/smartphone.svg" alt="img">
+
+								<h3 class="aside__top-title">Самсунг дочки</h3>
+
+								<div class="aside__indictor-box active">
+									<span class="aside__indictor"></span>
+									<span class="aside__indictor-label">1 час</span>
+								</div>
+							</div>
+
+							<nav class="aside__nav">
+								<a class="aside__item" href="dashboard.html">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#dashboard"></use>
+									</svg>
+									Дашборд
+								</a>
+
+								<a class="aside__item" href="geolocation-1.html">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#geolocation"></use>
+									</svg>
+									Геолокация
+									<span class="aside__item-count" data-geolocation="5">5</span>
+								</a>
+
+								<a class="aside__item" href="calls-1.html">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#phone"></use>
+									</svg>
+									Вызовы
+									<span class="aside__item-count" data-phone="4">4</span>
+								</a>
+
+								<a class="aside__item" href="contacts.html">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#contacts"></use>
+									</svg>
+									Контакты
+								</a>
+
+								<div data-spollers class="spollers">
+									<details class="spollers__item">
+										<summary class="aside__item spollers__title">
+											<svg class="aside__item-icon" width="24px" height="24px">
+												<use xlink:href="img/icons/icons.svg#messengers"></use>
+											</svg>
+											Мессенджеры
+											<span class="aside__item-count" data-messengers="145">145</span>
+
+											<svg class="spollers-arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7 1L1 7L7 13" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</summary>
+
+										<div class="spollers__body">
+											<a class="aside__spoller-item" href="#">
+												<img width="20px" height="20px" src="img/common-icons/whatsapp.svg" alt="whatsapp">
+												Whatsapp
+												<span class="aside__item-count" data-messengers="100">100</span>
+											</a>
+
+											<a class="aside__spoller-item" href="#">
+												<img width="20px" height="20px" src="img/common-icons/telegram.svg" alt="whatsapp">
+												Telegram
+												<span class="aside__item-count" data-messengers="145">45</span>
+											</a>
+
+											<a class="aside__spoller-item" href="#">
+												<img width="20px" height="20px" src="img/common-icons/vk.svg" alt="whatsapp">
+												Vk
+											</a>
+										</div>
+									</details>
+								</div>
+
+								<div data-spollers class="spollers">
+									<details class="spollers__item">
+										<summary class="aside__item spollers__title">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" fill="#135E98" stroke="#282828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+											Удалённая запись
+											<span class="aside__item-count" data-recording="5">5</span>
+
+											<svg class="spollers-arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7 1L1 7L7 13" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</summary>
+
+										<div class="spollers__body">
+											<a class="aside__spoller-item" href="#">
+												Аудио
+												<span class="aside__item-count" data-messengers="5">5</span>
+											</a>
+
+											<a class="aside__spoller-item" href="#">
+												Видео
+											</a>
+
+											<a class="aside__spoller-item" href="#">
+												Экран
+											</a>
+
+											<a class="aside__spoller-item" href="#">
+												Скриншоты
+											</a>
+										</div>
+									</details>
+								</div>
+
+								<a class="aside__item" href="#">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#broadcast"></use>
+									</svg>
+									Прямая трансляция
+								</a>
+
+								<a class="aside__item" href="#">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#sms"></use>
+									</svg>
+									SMS
+									<span class="aside__item-count" data-sms="24">24</span>
+								</a>
+
+								<a class="aside__item" href="#">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#media"></use>
+									</svg>
+									Медиа
+									<span class="aside__item-count" data-media="24">24</span>
+								</a>
+
+								<a class="aside__item" href="#">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#folder"></use>
+									</svg>
+									Доступ к файлам
+								</a>
+
+								<a class="aside__item active" href="#">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#notification"></use>
+									</svg>
+									Уведомления
+								</a>
+
+								<a class="aside__item" href="keyloger.html">
+									<svg class="aside__item-icon fill-black" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#keyloger"></use>
+									</svg>
+									Кейлоггер
+								</a>
+
+								<a class="aside__item" href="history.html">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#chrome"></use>
+									</svg>
+									История браузера
+								</a>
+
+								<a class="aside__item" href="#">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#app"></use>
+									</svg>
+									Приложения
+								</a>
+
+								<a class="aside__item" href="#">
+									<svg class="aside__item-icon fill-black" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#calendar"></use>
+									</svg>
+									Календарь
+								</a>
+
+								<a class="aside__item" href="#">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#settings"></use>
+									</svg>
+									Настройки
+								</a>
+							</nav>
+						</div>
+					</aside>
+
+					<div class="content">
+						<div class="content__top">
+							<h1 class="content__title main-title">Уведомления</h1>
+
+							<div class="content__top-controls">
+								<button class="content__top-filter">
+									<svg width="30px" height="30px">
+										<use xlink:href="img/icons/icons.svg#filter"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<section class="last-calls__section">
+							<div class="last-calls__heading">Сегодня</div>
+
+							<div class="notification__block last-calls__block">
+								<table class="notification__table">
+									<tbody class="notification__table-body">
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Yury: Приветствую! Тестовое сообщение, которое длинное и должно передаваться в ЛК трекера полностью даже через уведомления, поскольку оно из TG</p>
+											</td>
+										</tr>
+
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/chrome.svg" alt="img">
+													<div class="notification__name">Google Chrome</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Лишь диаграммы связей, инициированные исключительно синтетически, объявлены нарушающими общечеловеческие нормы этики и морали. В своём стремлени</p>
+											</td>
+										</tr>
+
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Привет! Хорошо!</p>
+											</td>
+										</tr>
+
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Nat: Привет! Как дела?</p>
+											</td>
+										</tr>
+
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Nat: Привет! Как дела?</p>
+											</td>
+										</tr>
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Nat: Привет! Как дела?</p>
+											</td>
+										</tr>
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Nat: Привет! Как дела?</p>
+											</td>
+										</tr>
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Nat: Привет! Как дела?</p>
+											</td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+						</section>
+
+						<section class="last-calls__section">
+							<div class="last-calls__heading">Вчера</div>
+
+							<div class="notification__block last-calls__block">
+								<table class="notification__table">
+									<tbody class="notification__table-body">
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Yury: Приветствую! Тестовое сообщение, которое длинное и должно передаваться в ЛК трекера полностью даже через уведомления, поскольку оно из TG</p>
+											</td>
+										</tr>
+
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/chrome.svg" alt="img">
+													<div class="notification__name">Google Chrome</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Лишь диаграммы связей, инициированные исключительно синтетически, объявлены нарушающими общечеловеческие нормы этики и морали. В своём стремлени</p>
+											</td>
+										</tr>
+
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Привет! Хорошо!</p>
+											</td>
+										</tr>
+
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Nat: Привет! Как дела?</p>
+											</td>
+										</tr>
+
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Nat: Привет! Как дела?</p>
+											</td>
+										</tr>
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Nat: Привет! Как дела?</p>
+											</td>
+										</tr>
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Nat: Привет! Как дела?</p>
+											</td>
+										</tr>
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Nat: Привет! Как дела?</p>
+											</td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+						</section>
+
+						<section class="last-calls__section">
+							<div class="last-calls__heading">2 апреля</div>
+
+							<div class="notification__block last-calls__block">
+								<table class="notification__table">
+									<tbody class="notification__table-body">
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Yury: Приветствую! Тестовое сообщение, которое длинное и должно передаваться в ЛК трекера полностью даже через уведомления, поскольку оно из TG</p>
+											</td>
+										</tr>
+
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/chrome.svg" alt="img">
+													<div class="notification__name">Google Chrome</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Лишь диаграммы связей, инициированные исключительно синтетически, объявлены нарушающими общечеловеческие нормы этики и морали. В своём стремлени</p>
+											</td>
+										</tr>
+
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Привет! Хорошо!</p>
+											</td>
+										</tr>
+
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Nat: Привет! Как дела?</p>
+											</td>
+										</tr>
+
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Nat: Привет! Как дела?</p>
+											</td>
+										</tr>
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Nat: Привет! Как дела?</p>
+											</td>
+										</tr>
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Nat: Привет! Как дела?</p>
+											</td>
+										</tr>
+										<tr class="notification__table-row">
+											<td class="notification__table-item">
+												<div class="notification__app-box">
+													<img class="notification__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+													<div class="notification__name">Telegram</div>
+												</div>
+											</td>
+
+											<td class="notification__table-item">18:40</td>
+
+											<td class="notification__table-item">
+												<p class="notification__text">Nat: Привет! Как дела?</p>
+											</td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+						</section>
+
+						<div class="pagination">
+							<a class="pagination__prev" href="#">
+								<svg width="10" height="20">
+									<use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+								</svg>
+							</a>
+
+							<div class="pagination__body">
+								<a class="pagination__item active" href="#">1</a>
+								<a class="pagination__item" href="#">2</a>
+								<a class="pagination__item" href="#">3</a>
+								<a class="pagination__item" href="#">4</a>
+								<a class="pagination__item" href="#">5</a>
+								<a class="pagination__item" href="#">6</a>
+								<a class="pagination__item" href="#">7</a>
+								<a class="pagination__item" href="#">8</a>
+							</div>
+
+							<a class="pagination__next" href="#">
+								<svg width="10" height="20">
+									<use xlink:href="img/icons/icons.svg#arrow-next"></use>
+								</svg>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__inner">
+					<div class="footer__item">
+						<a class="footer__logo logo" href="#">Tracker logo</a>
+
+						<p class="footer__copy">© 2023. Все права защищены</p>
+					</div>
+
+					<div class="footer__item">
+						<nav class="footer__nav">
+							<a class="footer__nav-item" href="#">Политика конфиденциальности</a>
+							<a class="footer__nav-item" href="#">Тарифы</a>
+							<a class="footer__nav-item" href="#">FAQ</a>
+							<a class="footer__nav-item" href="#">Связаться с нами</a>
+						</nav>
+					</div>
+
+					<div class="footer__item">
+						<nav class="footer__nav">
+							<a class="footer__nav-item" href="#">Политика конфиденциальности</a>
+							<a class="footer__nav-item" href="#">Тарифы</a>
+							<a class="footer__nav-item" href="#">FAQ</a>
+							<a class="footer__nav-item" href="#">Связаться с нами</a>
+						</nav>
+					</div>
+
+					<div class="footer__item">
+						<div class="footer__social">
+							<a class="footer__social-link" href="#">
+								<img src="img/common-icons/payment-1.svg" alt="img">
+							</a>
+							<a class="footer__social-link" href="#">
+								<img src="img/common-icons/payment-2.svg" alt="img">
+							</a>
+							<a class="footer__social-link" href="#">
+								<picture><source srcset="img/common-icons/payment-3.webp" type="image/webp"><img src="img/common-icons/payment-3.png" alt="img"></picture>
+							</a>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="js/app.min.js?_v=20230731092029"></script>
+</body>
+
+</html>

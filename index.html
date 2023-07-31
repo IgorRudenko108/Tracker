@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Верстка «Tracker»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>Верстка «Tracker»</h1>
+
+		<div class="rootpage__info">
+			Страницы проекта:
+		</div>
+
+		<h2>Готовые страницы:</h2>
+
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="dashboard.html">Дашборд</a></li>
+			<li><a target="_blank" href="geolocation-1.html">Геолокация (История перемещений)</a></li>
+			<li><a target="_blank" href="geolocation-2.html">Геолокация (Последняя точка)</a></li>
+			<li><a target="_blank" href="calls-1.html">Вызовы (Последние вызовы)</a></li>
+			<li><a target="_blank" href="calls-2.html">Вызовы (Вызовы / Сергей Иванович Куценко)</a></li>
+			<li><a target="_blank" href="contacts.html">Вызовы (Вызовы / Сергей Иванович Куценко)</a></li>
+			<li><a target="_blank" href="#">--------</a></li>
+			<li><a target="_blank" href="audiorecords.html">Удалённая запись / Аудио</a></li>
+			<li><a target="_blank" href="videorecords.html">Удалённая запись / Видео</a></li>
+			<li><a target="_blank" href="screenrecords.html">Удалённая запись / Экран</a></li>
+			<li><a target="_blank" href="#">--------</a></li>
+			<li><a target="_blank" href="#">--------</a></li>
+			<li><a target="_blank" href="mediafiles-1.html">Медиафайлы</a></li>
+			<li><a target="_blank" href="mediafiles-2.html">Медиафайлы (слайдер медиафайлоа)</a></li>
+			<li><a target="_blank" href="notification.html">Уведомления</a></li>
+			<li><a target="_blank" href="keyloger.html">Кейлоггер</a></li>
+			<li><a target="_blank" href="history.html">История браузера</a></li>
+			<li><a target="_blank" href="calendar.html">Календарь</a></li>
+			<li><a target="_blank" href="application-1.html">Приложения</a></li>
+		</ol>
+
+		<!-- <h2>Попапы:</h2>
+
+			<ol class="rootpage__list">
+				<li><a target="_blank" href="dashboard.html#popup-calls">popup calls</a></li>
+			</ol> -->
+
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background-color: #484749;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #7a96f1
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #aaa768;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #da7c02;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #da7c02;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #32b5a4;
+
+	}
+</style>
+
+</html>

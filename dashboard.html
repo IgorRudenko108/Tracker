@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Dashboard</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230731092029">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container container">
+				<div class="header__inner">
+					<button type="button" class="icon-menu"><span></span></button>
+
+					<a class="header__logo logo" href="#">Tracker logo</a>
+
+					<div class="header__notification-box">
+						<button class="header__notification-btn">
+							<svg class="header__notification-icon" width="24px" height="24px">
+								<use xlink:href="img/icons/icons.svg#notification-bell"></use>
+							</svg>
+						</button>
+
+						<span class="header__notification-count" data-notification-count="2">2</span>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="page__container container">
+				<div class="page__inner">
+
+					<aside class="aside">
+						<div class="aside__inner">
+							<div class="aside__top">
+								<img class="aside__top-icon" src="img/common-icons/smartphone.svg" alt="img">
+
+								<h3 class="aside__top-title">Самсунг дочки</h3>
+
+								<div class="aside__indictor-box active">
+									<span class="aside__indictor"></span>
+									<span class="aside__indictor-label">1 час</span>
+								</div>
+							</div>
+
+							<nav class="aside__nav">
+								<a class="aside__item active" href="#">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#dashboard"></use>
+									</svg>
+									Дашборд
+								</a>
+
+								<a class="aside__item" href="geolocation-1.html">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#geolocation"></use>
+									</svg>
+									Геолокация
+									<span class="aside__item-count" data-geolocation="5">5</span>
+								</a>
+
+								<a class="aside__item" href="calls-1.html">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#phone"></use>
+									</svg>
+									Вызовы
+									<span class="aside__item-count" data-phone="4">4</span>
+								</a>
+
+								<a class="aside__item" href="contacts.html">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#contacts"></use>
+									</svg>
+									Контакты
+								</a>
+
+								<div data-spollers class="spollers">
+									<details class="spollers__item">
+										<summary class="aside__item spollers__title">
+											<svg class="aside__item-icon" width="24px" height="24px">
+												<use xlink:href="img/icons/icons.svg#messengers"></use>
+											</svg>
+											Мессенджеры
+											<span class="aside__item-count" data-messengers="145">145</span>
+
+											<svg class="spollers-arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7 1L1 7L7 13" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</summary>
+
+										<div class="spollers__body">
+											<a class="aside__spoller-item" href="#">
+												<img width="20px" height="20px" src="img/common-icons/whatsapp.svg" alt="whatsapp">
+												Whatsapp
+												<span class="aside__item-count" data-messengers="100">100</span>
+											</a>
+
+											<a class="aside__spoller-item" href="#">
+												<img width="20px" height="20px" src="img/common-icons/telegram.svg" alt="whatsapp">
+												Telegram
+												<span class="aside__item-count" data-messengers="145">45</span>
+											</a>
+
+											<a class="aside__spoller-item" href="#">
+												<img width="20px" height="20px" src="img/common-icons/vk.svg" alt="whatsapp">
+												Vk
+											</a>
+										</div>
+									</details>
+								</div>
+
+								<div data-spollers class="spollers">
+									<details class="spollers__item">
+										<summary class="aside__item spollers__title">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												<path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" fill="#135E98" stroke="#282828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+											Удалённая запись
+											<span class="aside__item-count" data-recording="5">5</span>
+
+											<svg class="spollers-arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7 1L1 7L7 13" stroke="#282828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</summary>
+
+										<div class="spollers__body">
+											<a class="aside__spoller-item" href="#">
+												Аудио
+												<span class="aside__item-count" data-messengers="5">5</span>
+											</a>
+
+											<a class="aside__spoller-item" href="#">
+												Видео
+											</a>
+
+											<a class="aside__spoller-item" href="#">
+												Экран
+											</a>
+
+											<a class="aside__spoller-item" href="#">
+												Скриншоты
+											</a>
+										</div>
+									</details>
+								</div>
+
+								<a class="aside__item" href="#">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#broadcast"></use>
+									</svg>
+									Прямая трансляция
+								</a>
+
+								<a class="aside__item" href="#">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#sms"></use>
+									</svg>
+									SMS
+									<span class="aside__item-count" data-sms="24">24</span>
+								</a>
+
+								<a class="aside__item" href="#">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#media"></use>
+									</svg>
+									Медиа
+									<span class="aside__item-count" data-media="24">24</span>
+								</a>
+
+								<a class="aside__item" href="#">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#folder"></use>
+									</svg>
+									Доступ к файлам
+								</a>
+
+								<a class="aside__item" href="notification.html">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#notification"></use>
+									</svg>
+									Уведомления
+								</a>
+
+								<a class="aside__item" href="keyloger.html">
+									<svg class="aside__item-icon fill-black" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#keyloger"></use>
+									</svg>
+									Кейлоггер
+								</a>
+
+								<a class="aside__item" href="history.html">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#chrome"></use>
+									</svg>
+									История браузера
+								</a>
+
+								<a class="aside__item" href="#">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#app"></use>
+									</svg>
+									Приложения
+								</a>
+
+								<a class="aside__item" href="#">
+									<svg class="aside__item-icon fill-black" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#calendar"></use>
+									</svg>
+									Календарь
+								</a>
+
+								<a class="aside__item" href="#">
+									<svg class="aside__item-icon" width="24px" height="24px">
+										<use xlink:href="img/icons/icons.svg#settings"></use>
+									</svg>
+									Настройки
+								</a>
+							</nav>
+						</div>
+					</aside>
+
+					<div class="content">
+
+						<div class="content__top">
+							<h1 class="content__title main-title">Дашборд</h1>
+						</div>
+
+						<div class="content__block device-info__block">
+							<h2 class="device-info__title">Самсунг дочки</h2>
+
+							<div class="device-info__body">
+								<div class="device-info__item">
+									<h4 class="device-info__item-title">Модель:</h4>
+									<div class="device-info__item-text">Samsung Galaxy S20</div>
+								</div>
+
+								<div class="device-info__item">
+									<h4 class="device-info__item-title">Версия ОС:</h4>
+									<div class="device-info__item-text">Android 11</div>
+								</div>
+
+								<div class="device-info__item">
+									<h4 class="device-info__item-title">Был онлайн:</h4>
+									<div class="device-info__item-text"><span>58 минут назад</span></div>
+								</div>
+
+								<div class="device-info__item">
+									<h4 class="device-info__item-title">Геолокация:</h4>
+									<div class="device-info__item-text"><span>Включена</span></div>
+								</div>
+
+								<div class="device-info__item">
+									<h4 class="device-info__item-title">Батарея:</h4>
+									<div class="device-info__item-text"><span>85%</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="content__block warning__block">
+							<h2 class="warning__title">Внимание!</h2>
+
+							<p class="warning__text">Приложению на устройстве не предоставлено <span>5</span> разрешений! </p>
+
+							<a class="warning__link block-link" href="#">Исправить</a>
+						</div>
+						<div class="content__block last-calls__block">
+							<h2 class="last-calls__title block-title">Последние вызовы</h2>
+
+							<table class="last-calls__body">
+								<tbody>
+									<tr class="last-calls__item" data-popup="#popup-calls">
+										<td>
+											<div class="last-calls__contact-box">
+												<img class="last-calls__icon" src="img/block__last-calls/incoming.svg" alt="img">
+
+												<div class="last-calls__contact-info">
+													<div class="last-calls__contact-name">Сергей Иванович Куценко</div>
+													<div class="last-calls__contact-number">+79999999999</div>
+													<div class="last-calls__contact-timing--m">3 мин. 23 сек.</div>
+												</div>
+											</div>
+										</td>
+
+										<td class="last-calls__timing">1 час 3 мин. 23 сек.</td>
+
+										<td class="last-calls__date">4 апреля 18:40</td>
+
+										<td class="last-calls__wrapper">
+											<div class="last-calls__date--m">04.04.23 18:40</div>
+
+											<div class="last-calls__labels">
+												<img src="img/block__last-calls/recording.svg" alt="img">
+												<img src="img/block__last-calls/marker.svg" alt="img">
+											</div>
+										</td>
+									</tr>
+
+									<tr class="last-calls__item" data-popup="#popup-calls">
+										<td>
+											<div class="last-calls__contact-box">
+												<img class="last-calls__icon" src="img/block__last-calls/outcoming.svg" alt="img">
+
+												<div class="last-calls__contact-info">
+													<div class="last-calls__contact-name">Сергей Иванович Куценко</div>
+													<div class="last-calls__contact-number">+79999999999</div>
+													<div class="last-calls__contact-timing--m">3 мин. 23 сек.</div>
+												</div>
+											</div>
+										</td>
+
+										<td class="last-calls__timing">3 мин. 44 сек.</td>
+
+										<td class="last-calls__date">4 апреля 18:35</td>
+
+										<td class="last-calls__wrapper">
+											<div class="last-calls__date--m">04.04.23 18:40</div>
+
+											<div class="last-calls__labels">
+												<img src="img/block__last-calls/recording.svg" alt="img">
+											</div>
+										</td>
+									</tr>
+
+									<tr class="last-calls__item" data-popup="#popup-calls">
+										<td>
+											<div class="last-calls__contact-box">
+												<img class="last-calls__icon" src="img/block__last-calls/rejected.svg" alt="img">
+
+												<div class="last-calls__contact-info">
+													<div class="last-calls__contact-name"></div>
+													<div class="last-calls__contact-number">+79999999999</div>
+													<div class="last-calls__contact-timing--m">3 мин. 23 сек.</div>
+												</div>
+											</div>
+										</td>
+
+										<td class="last-calls__timing"></td>
+
+										<td class="last-calls__date">4 апреля 18:30</td>
+
+										<td class="last-calls__wrapper">
+											<div class="last-calls__date--m">04.04.23 18:40</div>
+
+										</td>
+									</tr>
+
+									<tr class="last-calls__item" data-popup="#popup-calls">
+										<td>
+											<div class="last-calls__contact-box">
+												<img class="last-calls__icon" src="img/block__last-calls/inaccessible.svg" alt="img">
+
+												<div class="last-calls__contact-info">
+													<div class="last-calls__contact-name">Сергей Иванович Куценко</div>
+													<div class="last-calls__contact-number">+79999999999</div>
+													<div class="last-calls__contact-timing--m">3 мин. 23 сек.</div>
+												</div>
+											</div>
+										</td>
+
+										<td class="last-calls__timing"></td>
+
+										<td class="last-calls__date">4 апреля 18:25</td>
+
+										<td class="last-calls__wrapper">
+											<div class="last-calls__date--m">04.04.23 18:40</div>
+
+										</td>
+									</tr>
+
+									<tr class="last-calls__item" data-popup="#popup-calls">
+										<td>
+											<div class="last-calls__contact-box">
+												<img class="last-calls__icon" src="img/block__last-calls/incoming.svg" alt="img">
+
+												<div class="last-calls__contact-info">
+													<div class="last-calls__contact-name">Сергей Иванович Куценко</div>
+													<div class="last-calls__contact-number">+79999999999</div>
+													<div class="last-calls__contact-timing--m"></div>
+												</div>
+											</div>
+										</td>
+
+										<td class="last-calls__timing">1 час 3 мин. 23 сек.</td>
+
+										<td class="last-calls__date">4 апреля 18:20</td>
+
+										<td class="last-calls__wrapper">
+											<div class="last-calls__date--m">04.04.23 18:40</div>
+
+											<div class="last-calls__labels">
+												<img src="img/block__last-calls/recording.svg" alt="img">
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<a class="last-calls__link block-link" href="#">Посмотреть все</a>
+
+						</div>
+						<div class="content__block use-app__block">
+							<h2 class="use-app__title block-title">Использование приложений за 24 часа</h2>
+
+							<div class="use-app__body">
+								<div class="use-app__item">
+									<div class="use-app__item-top">
+										<div class="use-app__service">
+											<img class="use-app__service-icon" width="24px" height="24px" src="img/common-icons/chrome.svg" alt="img">
+											<div class="use-app__service-name">Google Chrome</div>
+										</div>
+
+										<div class="use-app__timing">6 часов 37 минут</div>
+									</div>
+
+									<div class="use-app__progressbar use-app__progressbar--1" data-progressbar="80"></div>
+								</div>
+
+								<div class="use-app__item">
+									<div class="use-app__item-top">
+										<div class="use-app__service">
+											<img class="use-app__service-icon" width="24px" height="24px" C src="img/common-icons/vk.svg" alt="img">
+											<div class="use-app__service-name">VK</div>
+										</div>
+
+										<div class="use-app__timing">3 часа 37 минут</div>
+									</div>
+
+									<div class="use-app__progressbar use-app__progressbar--2" data-progressbar="55"></div>
+								</div>
+
+								<div class="use-app__item">
+									<div class="use-app__item-top">
+										<div class="use-app__service">
+											<picture><source srcset="img/block__use-app/yandex-map.webp" type="image/webp"><img class="use-app__service-icon" width="24px" height="24px" src="img/block__use-app/yandex-map.png" alt="img"></picture>
+											<div class="use-app__service-name">Яндекс.Карты</div>
+										</div>
+
+										<div class="use-app__timing">2 часа 24 минуты</div>
+									</div>
+
+									<div class="use-app__progressbar use-app__progressbar--3" data-progressbar="36"></div>
+								</div>
+
+								<div class="use-app__item">
+									<div class="use-app__item-top">
+										<div class="use-app__service">
+											<picture><source srcset="img/block__use-app/yandex-market.webp" type="image/webp"><img class="use-app__service-icon" width="24px" height="24px" src="img/block__use-app/yandex-market.png" alt="img"></picture>
+											<div class="use-app__service-name">Яндекс.Маркет</div>
+										</div>
+
+										<div class="use-app__timing">1 час 24 минуты</div>
+									</div>
+
+									<div class="use-app__progressbar use-app__progressbar--4" data-progressbar="30"></div>
+								</div>
+
+								<div class="use-app__item">
+									<div class="use-app__item-top">
+										<div class="use-app__service">
+											<picture><source srcset="img/block__use-app/yandex-market.webp" type="image/webp"><img class="use-app__service-icon" width="24px" height="24px" src="img/block__use-app/yandex-market.png" alt="img"></picture>
+											<div class="use-app__service-name">Яндекс.Маркет</div>
+										</div>
+
+										<div class="use-app__timing">54 минуты</div>
+									</div>
+
+									<div class="use-app__progressbar use-app__progressbar--5" data-progressbar="25"></div>
+								</div>
+
+								<div class="use-app__item">
+									<div class="use-app__item-top">
+										<div class="use-app__service">
+											<picture><source srcset="img/block__use-app/yandex-market.webp" type="image/webp"><img class="use-app__service-icon" width="24px" height="24px" src="img/block__use-app/yandex-market.png" alt="img"></picture>
+											<div class="use-app__service-name">Яндекс.Маркет</div>
+										</div>
+
+										<div class="use-app__timing">34 минуты</div>
+									</div>
+
+									<div class="use-app__progressbar use-app__progressbar--6" data-progressbar="18"></div>
+								</div>
+
+								<div class="use-app__item">
+									<div class="use-app__item-top">
+										<div class="use-app__service">
+											<picture><source srcset="img/block__use-app/yandex-market.webp" type="image/webp"><img class="use-app__service-icon" width="24px" height="24px" src="img/block__use-app/yandex-market.png" alt="img"></picture>
+											<div class="use-app__service-name">Яндекс.Маркет</div>
+										</div>
+
+										<div class="use-app__timing">14 минуты</div>
+									</div>
+
+									<div class="use-app__progressbar use-app__progressbar--7" data-progressbar="12"></div>
+								</div>
+
+								<a class="use-app__link block-link" href="#">Посмотреть все</a>
+							</div>
+
+						</div>
+						<div class="content__block last-location__block">
+							<h2 class="last-location__title block-title">Последнее местоположение</h2>
+
+							<div class="last-location__body">
+								<div class="last-location__map-box">
+									<iframe class="last-location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42290.17614849173!2d15.580798900381978!3d48.511457357604904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47729b9a4ecf94a1%3A0x838a2d62528657cf!2z0KDRg9GH0LXQuSDQpNCw0L3QsdCw0YU!5e0!3m2!1sru!2sde!4v1690141686353!5m2!1sru!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</div>
+							</div>
+
+							<div class="last-location__table-wrapper">
+								<table class="last-location__table">
+									<thead class="last-location__table-head">
+										<tr class="last-location__table-row">
+											<th class="last-location__table-heading">Дата и время</th>
+											<th class="last-location__table-heading">Точность</th>
+											<th class="last-location__table-heading">Адрес</th>
+											<th class="last-location__table-heading">На картах</th>
+										</tr>
+									</thead>
+
+									<tbody class="last-location__table-body">
+										<tr class="last-location__table-row">
+											<td class="last-location__table-item">04.04.23 20:30 (30 мин. назад)</td>
+											<td class="last-location__table-item">10 м</td>
+											<td class="last-location__table-item">Россия, г. Москва, ул. Ленина, д. 17</td>
+											<td class="last-location__table-item">
+												<div class="last-location__maps">
+													<a class="last-location__map-link" href="#">
+														<picture><source srcset="img/block__last-location/map-1.webp" type="image/webp"><img class="last-location__map-icon" src="img/block__last-location/map-1.png" alt="img"></picture>
+													</a>
+
+													<a class="last-location__map-link" href="#">
+														<picture><source srcset="img/block__last-location/map-2.webp" type="image/webp"><img class="last-location__map-icon" src="img/block__last-location/map-2.png" alt="img"></picture>
+													</a>
+
+													<a class="last-location__map-link" href="#">
+														<picture><source srcset="img/block__last-location/map-3.webp" type="image/webp"><img class="last-location__map-icon" src="img/block__last-location/map-3.png" alt="img"></picture>
+													</a>
+												</div>
+
+												<button class="last-location__maps--m" href="#">
+													<img class="last-location__maps-img--m" src="img/common-icons/map.svg" alt="img">
+
+													<div class="last-location__maps-list--m">
+														<a class="last-location__maps-link--m" href="#">
+															<picture><source srcset="img/block__last-location/map-1.webp" type="image/webp"><img class="last-location__map-icon--m" src="img/block__last-location/map-1.png" alt="img"></picture>
+															<span class="last-location__map-name--m" style="color: #FF3333;">Яндекс</span>
+														</a>
+
+														<a class="last-location__maps-link--m" href="#">
+															<picture><source srcset="img/block__last-location/map-2.webp" type="image/webp"><img class="last-location__map-icon--m" src="img/block__last-location/map-2.png" alt="img"></picture>
+															<span class="last-location__map-name--m" style="color: #6FB571;">Google</span>
+														</a>
+
+														<a class="last-location__maps-link--m" href="#">
+															<picture><source srcset="img/block__last-location/map-3.webp" type="image/webp"><img class="last-location__map-icon--m" src="img/block__last-location/map-3.png" alt="img"></picture>
+															<span class="last-location__map-name--m" style="color: #2181F0;">2GIS</span>
+														</a>
+													</div>
+												</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<a class="last-location__link block-link" href="geolocation-1.html">Посмотреть все</a>
+
+						</div>
+						<div class="content__block mediafiles__block">
+							<h2 class="mediafiles__title block-title">Медиафайлы</h2>
+
+							<div class="mediafiles__body">
+								<a class="mediafiles__item" href="#">
+									<picture><source srcset="img/block__mediafiles/1.webp" type="image/webp"><img class="mediafiles__item-img" src="img/block__mediafiles/1.jpg" alt="img"></picture>
+								</a>
+
+								<a class="mediafiles__item" href="#">
+									<picture><source srcset="img/block__mediafiles/2.webp" type="image/webp"><img class="mediafiles__item-img" src="img/block__mediafiles/2.jpg" alt="img"></picture>
+								</a>
+
+								<a class="mediafiles__item mediafiles__item-play" href="#">
+									<picture><source srcset="img/block__mediafiles/3.webp" type="image/webp"><img class="mediafiles__item-img" src="img/block__mediafiles/3.jpg" alt="img"></picture>
+								</a>
+
+								<a class="mediafiles__item" href="#">
+									<picture><source srcset="img/block__mediafiles/1.webp" type="image/webp"><img class="mediafiles__item-img" src="img/block__mediafiles/1.jpg" alt="img"></picture>
+								</a>
+
+								<a class="mediafiles__item" href="#">
+									<picture><source srcset="img/block__mediafiles/2.webp" type="image/webp"><img class="mediafiles__item-img" src="img/block__mediafiles/2.jpg" alt="img"></picture>
+								</a>
+
+								<a class="mediafiles__item mediafiles__item-play" href="#">
+									<picture><source srcset="img/block__mediafiles/3.webp" type="image/webp"><img class="mediafiles__item-img" src="img/block__mediafiles/3.jpg" alt="img"></picture>
+								</a>
+							</div>
+
+							<a class="mediafiles__link block-link" href="#">Посмотреть все</a>
+
+						</div>
+						<div class="content__block messengers__block">
+							<h2 class="messengers__title block-title">Мессенджеры</h2>
+
+							<div class="messengers__body">
+								<div class="messengers__item-wrapper">
+									<a class="messengers__item" href="#">
+										<picture><source srcset="img/block__messengers/1.webp" type="image/webp"><img class="messengers__item-img" src="img/block__messengers/1.jpg" alt="img"></picture>
+									</a>
+
+									<div class="messengers__item-bottom">
+										<div class="messengers__item-app messengers__item-text">Whatsapp</div>
+										<div class="messengers__item-user messengers__item-text">Yury</div>
+									</div>
+								</div>
+
+								<div class="messengers__item-wrapper">
+									<a class="messengers__item" href="#">
+										<picture><source srcset="img/block__messengers/1.webp" type="image/webp"><img class="messengers__item-img" src="img/block__messengers/1.jpg" alt="img"></picture>
+									</a>
+
+									<div class="messengers__item-bottom">
+										<div class="messengers__item-app messengers__item-text">Whatsapp</div>
+										<div class="messengers__item-user messengers__item-text">Yury</div>
+									</div>
+								</div>
+
+								<div class="messengers__item-wrapper">
+									<a class="messengers__item" href="#">
+										<picture><source srcset="img/block__messengers/1.webp" type="image/webp"><img class="messengers__item-img" src="img/block__messengers/1.jpg" alt="img"></picture>
+									</a>
+
+									<div class="messengers__item-bottom">
+										<div class="messengers__item-app messengers__item-text">Whatsapp</div>
+										<div class="messengers__item-user messengers__item-text">Yury</div>
+									</div>
+								</div>
+
+								<div class="messengers__item-wrapper">
+									<a class="messengers__item" href="#">
+										<picture><source srcset="img/block__messengers/1.webp" type="image/webp"><img class="messengers__item-img" src="img/block__messengers/1.jpg" alt="img"></picture>
+									</a>
+
+									<div class="messengers__item-bottom">
+										<div class="messengers__item-app messengers__item-text">Whatsapp</div>
+										<div class="messengers__item-user messengers__item-text">Yury</div>
+									</div>
+								</div>
+
+								<div class="messengers__item-wrapper">
+									<a class="messengers__item" href="#">
+										<picture><source srcset="img/block__messengers/1.webp" type="image/webp"><img class="messengers__item-img" src="img/block__messengers/1.jpg" alt="img"></picture>
+									</a>
+
+									<div class="messengers__item-bottom">
+										<div class="messengers__item-app messengers__item-text">Whatsapp</div>
+										<div class="messengers__item-user messengers__item-text">Yury</div>
+									</div>
+								</div>
+
+								<div class="messengers__item-wrapper">
+									<a class="messengers__item" href="#">
+										<picture><source srcset="img/block__messengers/1.webp" type="image/webp"><img class="messengers__item-img" src="img/block__messengers/1.jpg" alt="img"></picture>
+									</a>
+
+									<div class="messengers__item-bottom">
+										<div class="messengers__item-app messengers__item-text">Whatsapp</div>
+										<div class="messengers__item-user messengers__item-text">Yury</div>
+									</div>
+								</div>
+							</div>
+
+							<a class="messengers__link block-link" href="#">Посмотреть все</a>
+
+						</div>
+						<div class="content__block keyloger__block">
+							<h2 class="keyloger__title block-title">Кейлоггер</h2>
+
+							<table class="keyloger__table">
+								<tbody class="keyloger__table-body">
+									<tr class="keyloger__table-row">
+										<td class="keyloger__table-item">
+											<div class="keyloger__app-box">
+												<img class="keyloger__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+												<div class="keyloger__name">Telegram</div>
+											</div>
+										</td>
+
+										<td class="keyloger__table-item">18:40</td>
+
+										<td class="keyloger__table-item">
+											<p class="keyloger__text">Приветствую! Ответное тестовое сообщение, которое длинное и должно передаваться в ЛК трекера полностью даже через уведомления, поскольку оно из TG</p>
+										</td>
+									</tr>
+
+									<tr class="keyloger__table-row">
+										<td class="keyloger__table-item">
+											<div class="keyloger__app-box">
+												<img class="keyloger__icon" width="24px" height="24px" src="img/common-icons/chrome.svg" alt="img">
+												<div class="keyloger__name">Google Chrome</div>
+											</div>
+										</td>
+
+										<td class="keyloger__table-item">18:40</td>
+
+										<td class="keyloger__table-item">
+											<p class="keyloger__text">Лишь диаграммы связей, инициированные исключительно синтетически, объявлены нарушающими общечеловеческие нормы этики и морали. В своём стремлени</p>
+										</td>
+									</tr>
+
+									<tr class="keyloger__table-row">
+										<td class="keyloger__table-item">
+											<div class="keyloger__app-box">
+												<img class="keyloger__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+												<div class="keyloger__name">Telegram</div>
+											</div>
+										</td>
+
+										<td class="keyloger__table-item">18:40</td>
+
+										<td class="keyloger__table-item">
+											<p class="keyloger__text">Привет! Хорошо!</p>
+										</td>
+									</tr>
+
+									<tr class="keyloger__table-row">
+										<td class="keyloger__table-item">
+											<div class="keyloger__app-box">
+												<img class="keyloger__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+												<div class="keyloger__name">Telegram</div>
+											</div>
+										</td>
+
+										<td class="keyloger__table-item">18:40</td>
+
+										<td class="keyloger__table-item">
+											<p class="keyloger__text">Привет! Хорошо!</p>
+										</td>
+									</tr>
+
+									<tr class="keyloger__table-row">
+										<td class="keyloger__table-item">
+											<div class="keyloger__app-box">
+												<img class="keyloger__icon" width="24px" height="24px" src="img/common-icons/telegram.svg" alt="img">
+												<div class="keyloger__name">Telegram</div>
+											</div>
+										</td>
+
+										<td class="keyloger__table-item">18:40</td>
+
+										<td class="keyloger__table-item">
+											<p class="keyloger__text">Привет! Хорошо!</p>
+										</td>
+									</tr>
+
+								</tbody>
+							</table>
+
+							<a class="keyloger__link block-link" href="#">Посмотреть все</a>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__inner">
+					<div class="footer__item">
+						<a class="footer__logo logo" href="#">Tracker logo</a>
+
+						<p class="footer__copy">© 2023. Все права защищены</p>
+					</div>
+
+					<div class="footer__item">
+						<nav class="footer__nav">
+							<a class="footer__nav-item" href="#">Политика конфиденциальности</a>
+							<a class="footer__nav-item" href="#">Тарифы</a>
+							<a class="footer__nav-item" href="#">FAQ</a>
+							<a class="footer__nav-item" href="#">Связаться с нами</a>
+						</nav>
+					</div>
+
+					<div class="footer__item">
+						<nav class="footer__nav">
+							<a class="footer__nav-item" href="#">Политика конфиденциальности</a>
+							<a class="footer__nav-item" href="#">Тарифы</a>
+							<a class="footer__nav-item" href="#">FAQ</a>
+							<a class="footer__nav-item" href="#">Связаться с нами</a>
+						</nav>
+					</div>
+
+					<div class="footer__item">
+						<div class="footer__social">
+							<a class="footer__social-link" href="#">
+								<img src="img/common-icons/payment-1.svg" alt="img">
+							</a>
+							<a class="footer__social-link" href="#">
+								<img src="img/common-icons/payment-2.svg" alt="img">
+							</a>
+							<a class="footer__social-link" href="#">
+								<picture><source srcset="img/common-icons/payment-3.webp" type="image/webp"><img src="img/common-icons/payment-3.png" alt="img"></picture>
+							</a>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- popup-calls -->
+	<div id="popup-calls" aria-hidden="true" class="popup popup__calls">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="24px" height="24px">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+
+				<div class="popup__text popup-calls">
+					<div class="popup-calls__top">
+						<div class="popup-calls__item">
+							<div class="popup-calls__contact-box">
+								<img class="popup-calls__icon" src="img/block__last-calls/incoming.svg" alt="img">
+
+								<div class="popup-calls__contact-info">
+									<div class="popup-calls__contact-name">Сергей Иванович Куценко</div>
+									<div class="popup-calls__contact-number"><span>Мобильный:</span>+79999999999</div>
+								</div>
+							</div>
+
+							<div class="popup-calls__date">4 апреля 18:40</div>
+						</div>
+
+						<a class="popup-calls__link block-link" href="calls-2.html">Искать все вызовы</a>
+
+					</div>
+
+					<div class="popup-calls__incoming">
+						<p class="popup-calls__incoming-text">Входящий вызов, 3 мин. 23 сек.</p>
+
+						<div class="popup-calls__audio">
+							<div class="popup-calls__audio-track">
+								<div class="popup-calls__audio-progress" style="width: 15%" data-audio-progress="15"></div>
+							</div>
+
+							<div class="popup-calls__audio-controls">
+								<button class="popup-calls__play-btn">
+									<svg width="24" height="24">
+										<use xlink:href="img/icons/icons.svg#play"></use>
+									</svg>
+								</button>
+
+								<div class="popup-calls__play-time">
+									<span>0:00:12</span> / <span>0:03:23</span>
+								</div>
+
+								<button class="popup-calls__download-btn">
+									<svg width="20" height="20">
+										<use xlink:href="img/icons/icons.svg#download"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="last-location__block">
+						<p class="last-location__subtitle">Местоположение в момент звонка:</p>
+
+						<div class="last-location__body">
+							<div class="last-location__map-box">
+								<iframe class="last-location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42290.17614849173!2d15.580798900381978!3d48.511457357604904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47729b9a4ecf94a1%3A0x838a2d62528657cf!2z0KDRg9GH0LXQuSDQpNCw0L3QsdCw0YU!5e0!3m2!1sru!2sde!4v1690141686353!5m2!1sru!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+
+						<div class="last-location__table-wrapper">
+							<table class="last-location__table">
+								<thead class="last-location__table-head">
+									<tr class="last-location__table-row">
+										<th class="last-location__table-heading">Дата и время</th>
+										<th class="last-location__table-heading">Точность</th>
+										<th class="last-location__table-heading">На картах</th>
+									</tr>
+								</thead>
+
+								<tbody class="last-location__table-body">
+									<tr class="last-location__table-row">
+										<td class="last-location__table-item">04.04.23 20:30 (30 мин. назад)</td>
+										<td class="last-location__table-item">10 м</td>
+										<td class="last-location__table-item">
+											<div class="last-location__maps">
+												<a class="last-location__map-link" href="#">
+													<picture><source srcset="img/block__last-location/map-1.webp" type="image/webp"><img class="last-location__map-icon" src="img/block__last-location/map-1.png" alt="img"></picture>
+												</a>
+
+												<a class="last-location__map-link" href="#">
+													<picture><source srcset="img/block__last-location/map-2.webp" type="image/webp"><img class="last-location__map-icon" src="img/block__last-location/map-2.png" alt="img"></picture>
+												</a>
+
+												<a class="last-location__map-link" href="#">
+													<picture><source srcset="img/block__last-location/map-3.webp" type="image/webp"><img class="last-location__map-icon" src="img/block__last-location/map-3.png" alt="img"></picture>
+												</a>
+											</div>
+
+											<button class="last-location__maps--m" href="#">
+												<img class="last-location__maps-img--m" src="img/common-icons/map.svg" alt="img">
+
+												<div class="last-location__maps-list--m">
+													<a class="last-location__maps-link--m" href="#">
+														<picture><source srcset="img/block__last-location/map-1.webp" type="image/webp"><img class="last-location__map-icon--m" src="img/block__last-location/map-1.png" alt="img"></picture>
+														<span class="last-location__map-name--m" style="color: #FF3333;">Яндекс</span>
+													</a>
+
+													<a class="last-location__maps-link--m" href="#">
+														<picture><source srcset="img/block__last-location/map-2.webp" type="image/webp"><img class="last-location__map-icon--m" src="img/block__last-location/map-2.png" alt="img"></picture>
+														<span class="last-location__map-name--m" style="color: #6FB571;">Google</span>
+													</a>
+
+													<a class="last-location__maps-link--m" href="#">
+														<picture><source srcset="img/block__last-location/map-3.webp" type="image/webp"><img class="last-location__map-icon--m" src="img/block__last-location/map-3.png" alt="img"></picture>
+														<span class="last-location__map-name--m" style="color: #2181F0;">2GIS</span>
+													</a>
+												</div>
+											</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /popup-calls -->
+
+
+	<!-- popup-contacts -->
+	<div id="popup-contacts" aria-hidden="true" class="popup popup__calls">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="24px" height="24px">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+
+				<div class="popup__text popup-calls">
+					<div class="popup-calls__top">
+						<div class="popup-contacts__item">
+							<div class="popup-contacts__contact-box">
+								<img class="popup-contacts__icon" src="img/common-icons/user.svg" alt="img">
+
+								<div class="popup-calls__contact-info">
+									<div class="popup-contacts__contact-name">Сергей Иванович Куценко</div>
+									<div class="popup-contacts__contact-number"><span>Мобильный:</span>+79999999999</div>
+									<div class="popup-contacts__contact-number"><span>Домашний:</span>+79999999998</div>
+									<div class="popup-contacts__contact-number"><span>Рабочий:</span>+79999999997</div>
+								</div>
+							</div>
+
+							<div class="popup-contacts__date">Получено: 04.04.2023</div>
+						</div>
+
+					</div>
+
+					<div class="popup-contacts__info">
+						<div class="popup-contacts__raw">
+							<div class="popup-contacts__item">Адрес:</div>
+							<div class="popup-contacts__item">г. Москва, улица Ленина, д. 7, подъезд 2, этаж 15, кв. 72</div>
+						</div>
+
+						<div class="popup-contacts__raw">
+							<div class="popup-contacts__item">Группа:</div>
+							<div class="popup-contacts__item">Семья</div>
+						</div>
+					</div>
+
+					<div class="popup-contacts__social">
+						<div class="popup-calls__contact-number">
+							<img width="20px" height="20px" src="img/common-icons/telegram.svg" alt="img">
+							<span>Telegram:</span>
+							+79999999999
+						</div>
+
+						<div class="popup-calls__contact-number">
+							<img width="20px" height="20px" src="img/common-icons/whatsapp.svg" alt="img">
+							<span>WhatsApp:</span>
+							+79999999999
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /popup-contacts -->
+
+
+
+	<!-- popup-media -->
+	<div id="popup-media" aria-hidden="true" class="popup popup__calls">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="24px" height="24px">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+
+				<div class="popup__text popup-calls">
+
+					<div class="last-location__block">
+						<p class="last-location__subtitle">Местоположение в момент фото:</p>
+
+						<div class="last-location__body">
+							<div class="last-location__map-box">
+								<iframe class="last-location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42290.17614849173!2d15.580798900381978!3d48.511457357604904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47729b9a4ecf94a1%3A0x838a2d62528657cf!2z0KDRg9GH0LXQuSDQpNCw0L3QsdCw0YU!5e0!3m2!1sru!2sde!4v1690141686353!5m2!1sru!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+
+						<div class="last-location__table-wrapper">
+							<table class="last-location__table">
+								<thead class="last-location__table-head">
+									<tr class="last-location__table-row">
+										<th class="last-location__table-heading">Дата и время</th>
+										<th class="last-location__table-heading">Точность</th>
+										<th class="last-location__table-heading">На картах</th>
+									</tr>
+								</thead>
+
+								<tbody class="last-location__table-body">
+									<tr class="last-location__table-row">
+										<td class="last-location__table-item">04.04.23 20:30 (30 мин. назад)</td>
+										<td class="last-location__table-item">10 м</td>
+										<td class="last-location__table-item">
+											<div class="last-location__maps">
+												<a class="last-location__map-link" href="#">
+													<picture><source srcset="img/block__last-location/map-1.webp" type="image/webp"><img class="last-location__map-icon" src="img/block__last-location/map-1.png" alt="img"></picture>
+												</a>
+
+												<a class="last-location__map-link" href="#">
+													<picture><source srcset="img/block__last-location/map-2.webp" type="image/webp"><img class="last-location__map-icon" src="img/block__last-location/map-2.png" alt="img"></picture>
+												</a>
+
+												<a class="last-location__map-link" href="#">
+													<picture><source srcset="img/block__last-location/map-3.webp" type="image/webp"><img class="last-location__map-icon" src="img/block__last-location/map-3.png" alt="img"></picture>
+												</a>
+											</div>
+
+											<button class="last-location__maps--m" href="#">
+												<img class="last-location__maps-img--m" src="img/common-icons/map.svg" alt="img">
+
+												<div class="last-location__maps-list--m">
+													<a class="last-location__maps-link--m" href="#">
+														<picture><source srcset="img/block__last-location/map-1.webp" type="image/webp"><img class="last-location__map-icon--m" src="img/block__last-location/map-1.png" alt="img"></picture>
+														<span class="last-location__map-name--m" style="color: #FF3333;">Яндекс</span>
+													</a>
+
+													<a class="last-location__maps-link--m" href="#">
+														<picture><source srcset="img/block__last-location/map-2.webp" type="image/webp"><img class="last-location__map-icon--m" src="img/block__last-location/map-2.png" alt="img"></picture>
+														<span class="last-location__map-name--m" style="color: #6FB571;">Google</span>
+													</a>
+
+													<a class="last-location__maps-link--m" href="#">
+														<picture><source srcset="img/block__last-location/map-3.webp" type="image/webp"><img class="last-location__map-icon--m" src="img/block__last-location/map-3.png" alt="img"></picture>
+														<span class="last-location__map-name--m" style="color: #2181F0;">2GIS</span>
+													</a>
+												</div>
+											</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /popup-media -->
+
+
+
+	<!-- popup-audiorecords -->
+	<div id="popup-audiorecords" aria-hidden="true" class="popup popup__calls">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="24px" height="24px">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+
+				<div class="popup__text popup-calls">
+					<h3 class="popup-audiorecords__top-title--m">Аудиозапись №8</h3>
+
+					<div class="popup-audiorecords__top">
+						<div class="popup-audiorecords__top-item">
+							<h3 class="popup-audiorecords__top-title">Аудиозапись №8</h3>
+							<div class="popup-audiorecords__top-date">4 апреля 18:40</div>
+							<div class="popup-audiorecords__top-text">Аудио: Режим 1</div>
+						</div>
+
+						<div class="popup-audiorecords__top-item">
+							<button class="popup-audiorecords__edit popup-audiorecords__btn">
+								<span>Переименовать</span>
+								<svg width="20" height="20">
+									<use xlink:href="img/icons/icons.svg#edit"></use>
+								</svg>
+							</button>
+
+							<button class="popup-audiorecords__delete popup-audiorecords__btn">
+								<span>Удалить</span>
+								<svg width="20" height="20">
+									<use xlink:href="img/icons/icons.svg#delete"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<div class="popup-calls__incoming">
+						<p class="popup-audiorecords__subtitle">Прослушать запись:</p>
+
+						<div class="popup-calls__audio">
+							<div class="popup-calls__audio-track">
+								<div class="popup-calls__audio-progress" style="width: 15%" data-audio-progress="15"></div>
+							</div>
+
+							<div class="popup-calls__audio-controls">
+								<button class="popup-calls__play-btn">
+									<svg width="24" height="24">
+										<use xlink:href="img/icons/icons.svg#play"></use>
+									</svg>
+								</button>
+
+								<div class="popup-calls__play-time">
+									<span>0:00:12</span> / <span>0:03:23</span>
+								</div>
+
+								<button class="popup-calls__download-btn">
+									<svg width="20" height="20">
+										<use xlink:href="img/icons/icons.svg#download"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="last-location__block">
+						<p class="last-location__subtitle">Местоположение в момент начала записи:</p>
+
+						<div class="last-location__body">
+							<div class="last-location__map-box">
+								<iframe class="last-location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42290.17614849173!2d15.580798900381978!3d48.511457357604904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47729b9a4ecf94a1%3A0x838a2d62528657cf!2z0KDRg9GH0LXQuSDQpNCw0L3QsdCw0YU!5e0!3m2!1sru!2sde!4v1690141686353!5m2!1sru!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+
+						<div class="last-location__table-wrapper">
+							<table class="last-location__table">
+								<thead class="last-location__table-head">
+									<tr class="last-location__table-row">
+										<th class="last-location__table-heading">Дата и время</th>
+										<th class="last-location__table-heading">Точность</th>
+										<th class="last-location__table-heading">На картах</th>
+									</tr>
+								</thead>
+
+								<tbody class="last-location__table-body">
+									<tr class="last-location__table-row">
+										<td class="last-location__table-item">04.04.23 20:30 (30 мин. назад)</td>
+										<td class="last-location__table-item">10 м</td>
+										<td class="last-location__table-item">
+											<div class="last-location__maps">
+												<a class="last-location__map-link" href="#">
+													<picture><source srcset="img/block__last-location/map-1.webp" type="image/webp"><img class="last-location__map-icon" src="img/block__last-location/map-1.png" alt="img"></picture>
+												</a>
+
+												<a class="last-location__map-link" href="#">
+													<picture><source srcset="img/block__last-location/map-2.webp" type="image/webp"><img class="last-location__map-icon" src="img/block__last-location/map-2.png" alt="img"></picture>
+												</a>
+
+												<a class="last-location__map-link" href="#">
+													<picture><source srcset="img/block__last-location/map-3.webp" type="image/webp"><img class="last-location__map-icon" src="img/block__last-location/map-3.png" alt="img"></picture>
+												</a>
+											</div>
+
+											<button class="last-location__maps--m" href="#">
+												<img class="last-location__maps-img--m" src="img/common-icons/map.svg" alt="img">
+
+												<div class="last-location__maps-list--m">
+													<a class="last-location__maps-link--m" href="#">
+														<picture><source srcset="img/block__last-location/map-1.webp" type="image/webp"><img class="last-location__map-icon--m" src="img/block__last-location/map-1.png" alt="img"></picture>
+														<span class="last-location__map-name--m" style="color: #FF3333;">Яндекс</span>
+													</a>
+
+													<a class="last-location__maps-link--m" href="#">
+														<picture><source srcset="img/block__last-location/map-2.webp" type="image/webp"><img class="last-location__map-icon--m" src="img/block__last-location/map-2.png" alt="img"></picture>
+														<span class="last-location__map-name--m" style="color: #6FB571;">Google</span>
+													</a>
+
+													<a class="last-location__maps-link--m" href="#">
+														<picture><source srcset="img/block__last-location/map-3.webp" type="image/webp"><img class="last-location__map-icon--m" src="img/block__last-location/map-3.png" alt="img"></picture>
+														<span class="last-location__map-name--m" style="color: #2181F0;">2GIS</span>
+													</a>
+												</div>
+											</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /popup-audiorecords -->
+
+
+
+	<!-- popup-videorecords -->
+	<div id="popup-videorecords" aria-hidden="true" class="popup popup__calls">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="24px" height="24px">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+
+				<div class="popup__text popup-calls">
+					<h3 class="popup-audiorecords__top-title--m">Видеозапись №8</h3>
+
+					<div class="popup-audiorecords__top">
+						<div class="popup-audiorecords__top-item">
+							<h3 class="popup-audiorecords__top-title">Видеозапись №8</h3>
+							<div class="popup-audiorecords__top-date">4 апреля 18:40</div>
+							<div class="popup-audiorecords__top-text">Видео: Режим 1</div>
+						</div>
+
+						<div class="popup-audiorecords__top-item">
+							<button class="popup-audiorecords__edit popup-audiorecords__btn">
+								<span>Переименовать</span>
+								<svg width="20" height="20">
+									<use xlink:href="img/icons/icons.svg#edit"></use>
+								</svg>
+							</button>
+
+							<button class="popup-audiorecords__delete popup-audiorecords__btn">
+								<span>Удалить</span>
+								<svg width="20" height="20">
+									<use xlink:href="img/icons/icons.svg#delete"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<div class="popup-calls__incoming">
+						<p class="popup-videorecords__subtitle">Посмотреть запись:</p>
+
+						<div class="popup-videorecords__box">
+							<div class="popup-videorecords__body">
+								<picture><source srcset="img/page-mediafiles-2/video-img.webp" type="image/webp"><img class="popup-videorecords__img" src="img/page-mediafiles-2/video-img.jpg" alt="img"></picture>
+
+								<a class="popup-videorecords__play" href="#">
+									<svg width="48" height="48">
+										<use xlink:href="img/icons/icons.svg#play"></use>
+									</svg>
+								</a>
+							</div>
+
+							<div class="popup-calls__audio">
+								<div class="popup-calls__audio-track">
+									<div class="popup-calls__audio-progress" style="width: 15%" data-audio-progress="15"></div>
+								</div>
+
+								<div class="popup-calls__audio-controls">
+									<button class="popup-calls__play-btn">
+										<svg width="24" height="24">
+											<use xlink:href="img/icons/icons.svg#play"></use>
+										</svg>
+									</button>
+
+									<div class="popup-calls__play-time">
+										<span>0:00:12</span> / <span>0:03:23</span>
+									</div>
+
+									<div class="videorecords__controls">
+										<button class="popup-calls__download-btn">
+											<svg width="15" height="15">
+												<use xlink:href="img/icons/icons.svg#fullscreen"></use>
+											</svg>
+										</button>
+
+										<button class="popup-calls__download-btn">
+											<svg width="15" height="15">
+												<use xlink:href="img/icons/icons.svg#download"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<a class="last-location__subtitle popup-link" href="#" data-popup="#popup-videorecords-map">
+						<span>Местоположение в момент начала записи</span>
+					</a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /popup-videorecords -->
+
+
+
+	<!-- popup-videorecords-map -->
+	<div id="popup-videorecords-map" aria-hidden="true" class="popup popup__calls">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="24px" height="24px">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+
+				<div class="popup__text popup-calls">
+					<h3 class="popup-audiorecords__top-title--m">Видеозапись №8</h3>
+
+					<div class="popup-audiorecords__top">
+						<div class="popup-audiorecords__top-item">
+							<h3 class="popup-audiorecords__top-title">Видеозапись №8</h3>
+							<div class="popup-audiorecords__top-date">4 апреля 18:40</div>
+							<div class="popup-audiorecords__top-text">Аудио: Режим 1</div>
+						</div>
+
+						<div class="popup-audiorecords__top-item">
+							<button class="popup-audiorecords__edit popup-audiorecords__btn">
+								<span>Переименовать</span>
+								<svg width="20" height="20">
+									<use xlink:href="img/icons/icons.svg#edit"></use>
+								</svg>
+							</button>
+
+							<button class="popup-audiorecords__delete popup-audiorecords__btn">
+								<span>Удалить</span>
+								<svg width="20" height="20">
+									<use xlink:href="img/icons/icons.svg#delete"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<a class="popup-videorecords__subtitle popup-link" href="#" data-popup="#popup-videorecords">
+						<span>Посмотреть запись:</span>
+					</a>
+
+
+					<div class="last-location__block">
+						<p class="last-location__subtitle">Местоположение в момент начала записи:</p>
+
+						<div class="last-location__body">
+							<div class="last-location__map-box">
+								<iframe class="last-location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42290.17614849173!2d15.580798900381978!3d48.511457357604904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47729b9a4ecf94a1%3A0x838a2d62528657cf!2z0KDRg9GH0LXQuSDQpNCw0L3QsdCw0YU!5e0!3m2!1sru!2sde!4v1690141686353!5m2!1sru!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+
+						<div class="last-location__table-wrapper">
+							<table class="last-location__table">
+								<thead class="last-location__table-head">
+									<tr class="last-location__table-row">
+										<th class="last-location__table-heading">Дата и время</th>
+										<th class="last-location__table-heading">Точность</th>
+										<th class="last-location__table-heading">На картах</th>
+									</tr>
+								</thead>
+
+								<tbody class="last-location__table-body">
+									<tr class="last-location__table-row">
+										<td class="last-location__table-item">04.04.23 20:30 (30 мин. назад)</td>
+										<td class="last-location__table-item">10 м</td>
+										<td class="last-location__table-item">
+											<div class="last-location__maps">
+												<a class="last-location__map-link" href="#">
+													<picture><source srcset="img/block__last-location/map-1.webp" type="image/webp"><img class="last-location__map-icon" src="img/block__last-location/map-1.png" alt="img"></picture>
+												</a>
+
+												<a class="last-location__map-link" href="#">
+													<picture><source srcset="img/block__last-location/map-2.webp" type="image/webp"><img class="last-location__map-icon" src="img/block__last-location/map-2.png" alt="img"></picture>
+												</a>
+
+												<a class="last-location__map-link" href="#">
+													<picture><source srcset="img/block__last-location/map-3.webp" type="image/webp"><img class="last-location__map-icon" src="img/block__last-location/map-3.png" alt="img"></picture>
+												</a>
+											</div>
+
+											<button class="last-location__maps--m" href="#">
+												<img class="last-location__maps-img--m" src="img/common-icons/map.svg" alt="img">
+
+												<div class="last-location__maps-list--m">
+													<a class="last-location__maps-link--m" href="#">
+														<picture><source srcset="img/block__last-location/map-1.webp" type="image/webp"><img class="last-location__map-icon--m" src="img/block__last-location/map-1.png" alt="img"></picture>
+														<span class="last-location__map-name--m" style="color: #FF3333;">Яндекс</span>
+													</a>
+
+													<a class="last-location__maps-link--m" href="#">
+														<picture><source srcset="img/block__last-location/map-2.webp" type="image/webp"><img class="last-location__map-icon--m" src="img/block__last-location/map-2.png" alt="img"></picture>
+														<span class="last-location__map-name--m" style="color: #6FB571;">Google</span>
+													</a>
+
+													<a class="last-location__maps-link--m" href="#">
+														<picture><source srcset="img/block__last-location/map-3.webp" type="image/webp"><img class="last-location__map-icon--m" src="img/block__last-location/map-3.png" alt="img"></picture>
+														<span class="last-location__map-name--m" style="color: #2181F0;">2GIS</span>
+													</a>
+												</div>
+											</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /popup-videorecords-map -->
+
+
+
+	<!-- popup-screenrecords -->
+	<div id="popup-screenrecords" aria-hidden="true" class="popup popup__calls">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="24px" height="24px">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+
+				<div class="popup__text popup-calls">
+					<h3 class="popup-audiorecords__top-title--m">Запись экрана №8</h3>
+
+					<div class="popup-audiorecords__top">
+						<div class="popup-audiorecords__top-item">
+							<h3 class="popup-audiorecords__top-title">Запись экрана №8</h3>
+							<div class="popup-audiorecords__top-date">4 апреля 18:40</div>
+							<div class="popup-audiorecords__top-text">Экран: Режим 1</div>
+						</div>
+
+						<div class="popup-audiorecords__top-item">
+							<button class="popup-audiorecords__edit popup-audiorecords__btn">
+								<span>Переименовать</span>
+								<svg width="20" height="20">
+									<use xlink:href="img/icons/icons.svg#edit"></use>
+								</svg>
+							</button>
+
+							<button class="popup-audiorecords__delete popup-audiorecords__btn">
+								<span>Удалить</span>
+								<svg width="20" height="20">
+									<use xlink:href="img/icons/icons.svg#delete"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<div class="popup-calls__incoming">
+						<p class="popup-videorecords__subtitle">Посмотреть запись:</p>
+
+						<div class="popup-videorecords__box">
+							<div class="popup-videorecords__body">
+								<picture><source srcset="img/page-mediafiles-2/screen-img.webp" type="image/webp"><img class="popup-videorecords__img" src="img/page-mediafiles-2/screen-img.jpg" alt="img"></picture>
+
+								<a class="popup-videorecords__play" href="#">
+									<svg width="48" height="48">
+										<use xlink:href="img/icons/icons.svg#play"></use>
+									</svg>
+								</a>
+							</div>
+
+							<div class="popup-calls__audio">
+								<div class="popup-calls__audio-track">
+									<div class="popup-calls__audio-progress" style="width: 15%" data-audio-progress="15"></div>
+								</div>
+
+								<div class="popup-calls__audio-controls">
+									<button class="popup-calls__play-btn">
+										<svg width="24" height="24">
+											<use xlink:href="img/icons/icons.svg#play"></use>
+										</svg>
+									</button>
+
+									<div class="popup-calls__play-time">
+										<span>0:00:12</span> / <span>0:03:23</span>
+									</div>
+
+									<div class="videorecords__controls">
+										<button class="popup-calls__download-btn">
+											<svg width="15" height="15">
+												<use xlink:href="img/icons/icons.svg#fullscreen"></use>
+											</svg>
+										</button>
+
+										<button class="popup-calls__download-btn">
+											<svg width="15" height="15">
+												<use xlink:href="img/icons/icons.svg#download"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<a class="last-location__subtitle popup-link" href="#" data-popup="#popup-videorecords-map">
+						<span>Местоположение в момент начала записи</span>
+					</a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /popup-screenrecords -->
+
+
+
+	<!-- popup-screenrecords-map -->
+	<div id="popup-screenrecords-map" aria-hidden="true" class="popup popup__calls">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="24px" height="24px">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+				</button>
+
+				<div class="popup__text popup-calls">
+					<h3 class="popup-audiorecords__top-title--m">Запись экрана №8</h3>
+
+					<div class="popup-audiorecords__top">
+						<div class="popup-audiorecords__top-item">
+							<h3 class="popup-audiorecords__top-title">Запись экрана №8</h3>
+							<div class="popup-audiorecords__top-date">4 апреля 18:40</div>
+							<div class="popup-audiorecords__top-text">Экран: Режим 1</div>
+						</div>
+
+						<div class="popup-audiorecords__top-item">
+							<button class="popup-audiorecords__edit popup-audiorecords__btn">
+								<span>Переименовать</span>
+								<svg width="20" height="20">
+									<use xlink:href="img/icons/icons.svg#edit"></use>
+								</svg>
+							</button>
+
+							<button class="popup-audiorecords__delete popup-audiorecords__btn">
+								<span>Удалить</span>
+								<svg width="20" height="20">
+									<use xlink:href="img/icons/icons.svg#delete"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<a class="popup-videorecords__subtitle popup-link" href="#" data-popup="#popup-screenrecords">
+						<span>Посмотреть запись:</span>
+					</a>
+
+
+					<div class="last-location__block">
+						<p class="last-location__subtitle">Местоположение в момент начала записи:</p>
+
+						<div class="last-location__body">
+							<div class="last-location__map-box">
+								<iframe class="last-location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42290.17614849173!2d15.580798900381978!3d48.511457357604904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47729b9a4ecf94a1%3A0x838a2d62528657cf!2z0KDRg9GH0LXQuSDQpNCw0L3QsdCw0YU!5e0!3m2!1sru!2sde!4v1690141686353!5m2!1sru!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+
+						<div class="last-location__table-wrapper">
+							<table class="last-location__table">
+								<thead class="last-location__table-head">
+									<tr class="last-location__table-row">
+										<th class="last-location__table-heading">Дата и время</th>
+										<th class="last-location__table-heading">Точность</th>
+										<th class="last-location__table-heading">На картах</th>
+									</tr>
+								</thead>
+
+								<tbody class="last-location__table-body">
+									<tr class="last-location__table-row">
+										<td class="last-location__table-item">04.04.23 20:30 (30 мин. назад)</td>
+										<td class="last-location__table-item">10 м</td>
+										<td class="last-location__table-item">
+											<div class="last-location__maps">
+												<a class="last-location__map-link" href="#">
+													<picture><source srcset="img/block__last-location/map-1.webp" type="image/webp"><img class="last-location__map-icon" src="img/block__last-location/map-1.png" alt="img"></picture>
+												</a>
+
+												<a class="last-location__map-link" href="#">
+													<picture><source srcset="img/block__last-location/map-2.webp" type="image/webp"><img class="last-location__map-icon" src="img/block__last-location/map-2.png" alt="img"></picture>
+												</a>
+
+												<a class="last-location__map-link" href="#">
+													<picture><source srcset="img/block__last-location/map-3.webp" type="image/webp"><img class="last-location__map-icon" src="img/block__last-location/map-3.png" alt="img"></picture>
+												</a>
+											</div>
+
+											<button class="last-location__maps--m" href="#">
+												<img class="last-location__maps-img--m" src="img/common-icons/map.svg" alt="img">
+
+												<div class="last-location__maps-list--m">
+													<a class="last-location__maps-link--m" href="#">
+														<picture><source srcset="img/block__last-location/map-1.webp" type="image/webp"><img class="last-location__map-icon--m" src="img/block__last-location/map-1.png" alt="img"></picture>
+														<span class="last-location__map-name--m" style="color: #FF3333;">Яндекс</span>
+													</a>
+
+													<a class="last-location__maps-link--m" href="#">
+														<picture><source srcset="img/block__last-location/map-2.webp" type="image/webp"><img class="last-location__map-icon--m" src="img/block__last-location/map-2.png" alt="img"></picture>
+														<span class="last-location__map-name--m" style="color: #6FB571;">Google</span>
+													</a>
+
+													<a class="last-location__maps-link--m" href="#">
+														<picture><source srcset="img/block__last-location/map-3.webp" type="image/webp"><img class="last-location__map-icon--m" src="img/block__last-location/map-3.png" alt="img"></picture>
+														<span class="last-location__map-name--m" style="color: #2181F0;">2GIS</span>
+													</a>
+												</div>
+											</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /popup-screenrecords-map -->
+
+
+	<script src="js/app.min.js?_v=20230731092029"></script>
+</body>
+
+</html>

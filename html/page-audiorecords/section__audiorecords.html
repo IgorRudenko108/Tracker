@@ -1,0 +1,241 @@
+<section class="audiorecords__section">
+	<div class="audiorecords__wrapper">
+		<div class="audiorecords__heading">Команда на запись</div>
+
+		<div class="content__block audiorecords__block">
+			<div class="audiorecords__block-inner">
+
+				<div class="audiorecords__block-item">
+					<p class="audiorecords__block-item-label">Название записи:</p>
+					<div class="audiorecords__block-item-title">Аудиозапись №10</div>
+				</div>
+
+				<div class="audiorecords__block-item">
+					<p class="audiorecords__block-item-label">Аудио:</p>
+					<select data-submit data-scroll name="form[]" data-class-modif="form">
+						<option value="" selected>Режим 1</option>
+						<option value="1">Режим 2</option>
+						<option value="2">Режим 3</option>
+						<option value="3">Режим 4</option>
+						<option value="3">Режим 5</option>
+					</select>
+				</div>
+
+				<div class="audiorecords__block-item audiorecords__inputs">
+					<label class="audiorecords__date-label" for="audiorecords__date-input">Начало записи:</label>
+					<input class="audiorecords__date-input" type="date" value="2023-03-24">
+					<input class="audiorecords__date-input" type="time" value="00:00">
+				</div>
+
+				<div class="audiorecords__block-item">
+					<p class="audiorecords__block-item-label">Длительность:</p>
+					<select data-submit data-scroll name="form[]" data-class-modif="form">
+						<option value="" selected>15 минут</option>
+						<option value="1">20 минут</option>
+						<option value="2">25 минут</option>
+						<option value="3">35 минут</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<div class="location__send-box">
+			<button class="location__send-btn">Отправить команду</button>
+
+			<div class="sending">
+				Запрос отправляется
+				<div class="sending-loader">
+					<span class="sending-loader__circle sending-loader__circle--1"></span>
+					<span class="sending-loader__circle sending-loader__circle--2"></span>
+					<span class="sending-loader__circle sending-loader__circle--3"></span>
+				</div>
+			</div>
+
+			<div class="sending-failed">
+				<p class="sending-failed__text">
+					<svg width="16" height="16">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+					Не удалось доставить команду
+				</p>
+				<button class="location__send-btn">Отправить повторно</button>
+			</div>
+
+			<div class="sending-success">
+				<p class="sending-success__text">
+					<svg width="16" height="16">
+						<use xlink:href="img/icons/icons.svg#success"></use>
+					</svg>
+					Команда успешно доставлена
+				</p>
+			</div>
+
+			<div class="sending-new">
+				<p class="sending-new__text">Новый запрос можно отправить через</p>
+				<span>1:36:45</span>
+			</div>
+
+			<div class="sending-arror">
+				<p class="sending-failed__text">
+					<svg width="16" height="16">
+						<use xlink:href="img/icons/icons.svg#close"></use>
+					</svg>
+					Время записи совпадает с другой командой
+				</p>
+				<p>Измените время или отмените конфликтующий запрос</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="audiorecords__section">
+	<div class="audiorecords__wrapper">
+		<div class="audiorecords__heading">Результаты</div>
+
+		<div class="content__section audiorecords__block">
+			<table class="audiorecords__body">
+				<tbody>
+					<tr class="audiorecords__item" data-popup="#popup-audiorecords">
+						<td class="audiorecords__name">
+							<div class="audiorecords__title">Аудиозапись №9</div>
+							<span class="wating">Ожидание...</span>
+						</td>
+
+						<td class="audiorecords__timing timing">
+							<button>Отменить</button>
+						</td>
+
+						<td class="audiorecords__date">
+							4 апреля 18:40
+						</td>
+					</tr>
+
+					<tr class="audiorecords__item" data-popup="#popup-audiorecords">
+						<td class="audiorecords__name">
+							<div class="audiorecords__title">Аудиозапись №8</div>
+						</td>
+
+						<td class="audiorecords__timing timing">
+							<div class="sending-loader audiorecords__sending">
+								<span class="sending-loader__circle sending-loader__circle--1"></span>
+								<span class="sending-loader__circle sending-loader__circle--2"></span>
+								<span class="sending-loader__circle sending-loader__circle--3"></span>
+							</div>
+						</td>
+
+						<td class="audiorecords__date">
+							4 апреля 18:40
+						</td>
+					</tr>
+
+					<tr class="audiorecords__item" data-popup="#popup-audiorecords">
+						<td class="audiorecords__name">
+							<div class="audiorecords__title">Аудиозапись №7</div>
+						</td>
+
+						<td class="audiorecords__timing timing">
+							00:15:00
+						</td>
+
+						<td class="audiorecords__date">
+							4 апреля 18:40
+						</td>
+					</tr>
+
+					<tr class="audiorecords__item" data-popup="#popup-audiorecords">
+						<td class="audiorecords__name">
+							<div class="audiorecords__title">Аудиозапись №6</div>
+						</td>
+
+						<td class="audiorecords__timing timing">
+							<div class="audiorecords__sending">
+								Нет связи с устройством
+							</div>
+						</td>
+
+						<td class="audiorecords__date">
+							4 апреля 18:40
+						</td>
+					</tr>
+
+					<tr class="audiorecords__item" data-popup="#popup-audiorecords">
+						<td class="audiorecords__name">
+							<div class="audiorecords__title">Аудиозапись №5</div>
+						</td>
+
+						<td class="audiorecords__timing timing">
+							00:15:00
+						</td>
+
+						<td class="audiorecords__date">
+							4 апреля 18:40
+						</td>
+					</tr>
+
+					<tr class="audiorecords__item" data-popup="#popup-audiorecords">
+						<td class="audiorecords__name">
+							<div class="audiorecords__title">Аудиозапись №4</div>
+						</td>
+
+						<td class="audiorecords__timing timing">
+							<div class="audiorecords__sending">
+								<p class="sending-success__text audiorecords__sending-text">
+									<svg width="16" height="16">
+										<use xlink:href="img/icons/icons.svg#success"></use>
+									</svg>
+									Команда отменена
+								</p>
+							</div>
+						</td>
+
+						<td class="audiorecords__date">
+							4 апреля 18:40
+						</td>
+					</tr>
+
+					<tr class="audiorecords__item" data-popup="#popup-audiorecords">
+						<td class="audiorecords__name">
+							<div class="audiorecords__title">Аудиозапись №3</div>
+						</td>
+
+						<td class="audiorecords__timing timing">
+							00:15:00
+						</td>
+
+						<td class="audiorecords__date">
+							4 апреля 18:40
+						</td>
+					</tr>
+
+					<tr class="audiorecords__item" data-popup="#popup-audiorecords">
+						<td class="audiorecords__name">
+							<div class="audiorecords__title">Аудиозапись №2</div>
+						</td>
+
+						<td class="audiorecords__timing timing">
+							00:15:00
+						</td>
+
+						<td class="audiorecords__date">
+							4 апреля 18:40
+						</td>
+					</tr>
+
+					<tr class="audiorecords__item" data-popup="#popup-audiorecords">
+						<td class="audiorecords__name">
+							<div class="audiorecords__title">Аудиозапись №1</div>
+						</td>
+
+						<td class="audiorecords__timing timing">
+							00:15:00
+						</td>
+
+						<td class="audiorecords__date">
+							4 апреля 18:40
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</section>
