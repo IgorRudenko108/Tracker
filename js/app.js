@@ -984,6 +984,8 @@
         document.body.classList.toggle("_lock");
         asideMenuBurger.classList.toggle("_active");
         asideBody.classList.toggle("_active");
+    }));
+    if (sliderBody) asideMenuBurger.addEventListener("click", (function(e) {
         sliderBody.classList.toggle("_active");
     }));
     if (isMobile.any()) {

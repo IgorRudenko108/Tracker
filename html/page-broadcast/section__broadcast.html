@@ -1,0 +1,74 @@
+<div class="audiorecords__wrapper">
+
+	<div class="content__block broadcast__block">
+
+		<div class="broadcast__controls">
+			<div class="broadcast__controls-item">
+
+				<div class="checkbox broadcast__controls-checkbox">
+					<input id="check-1" checked type="checkbox" name="agreement" class="checkbox__input">
+					<label for="check-1" class="checkbox__label"><span></span></label>
+				</div>
+
+				<img width="30" height="30" class="broadcast__controls-img" src="img/common-icons/video.svg" alt="Video">
+
+				<p class="broadcast__controls-text">Видео</p>
+			</div>
+
+			<div class="broadcast__controls-item">
+				<div class="checkbox broadcast__controls-checkbox">
+					<input id="check-2" type="checkbox" name="agreement" class="checkbox__input">
+					<label for="check-2" class="checkbox__label"><span></span></label>
+				</div>
+
+				<img width="30" height="30" class="broadcast__controls-img" src="img/common-icons/screen.svg" alt="Screen">
+
+				<p class="broadcast__controls-text">Видео</p>
+			</div>
+
+			<div class="broadcast__controls-item ">
+				<div class="checkbox broadcast__controls-checkbox">
+					<input id="check-3" type="checkbox" name="agreement" class="checkbox__input">
+					<label for="check-3" class="checkbox__label"><span></span></label>
+				</div>
+
+				<img class="broadcast__controls-img" src="img/common-icons/records.svg" alt="Video">
+
+				<p class="broadcast__controls-text">Аудио</p>
+			</div>
+		</div>
+
+		<div class="audiorecords__block-inner">
+
+			<div class="audiorecords__block-item">
+				<p class="audiorecords__block-item-label">Название записи:</p>
+				<div class="audiorecords__block-item-title">Аудиозапись №10</div>
+			</div>
+
+			<div class="audiorecords__block-item">
+				<p class="audiorecords__block-item-label">Аудио:</p>
+				<select data-submit data-scroll name="form[]" data-class-modif="form">
+					<option value="" selected>Режим 1</option>
+					<option value="1">Режим 2</option>
+					<option value="2">Режим 3</option>
+					<option value="3">Режим 4</option>
+					<option value="3">Режим 5</option>
+				</select>
+			</div>
+
+			<div class="audiorecords__block-item broadcast__block--full">
+				<p class="audiorecords__block-item-label">Длительность:</p>
+				<select data-submit data-scroll name="form[]" data-class-modif="form">
+					<option value="" selected>15 минут</option>
+					<option value="1">20 минут</option>
+					<option value="2">25 минут</option>
+					<option value="3">35 минут</option>
+				</select>
+			</div>
+		</div>
+	</div>
+
+	<div class="location__send-box">
+		<button class="location__send-btn">Начать трансляцию</button>
+	</div>
+</div>
