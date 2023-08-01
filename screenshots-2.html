@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Calls-1</title>
+	<title>Screenshots-2</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -11,6 +11,7 @@
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20230801043631" />
 </head>
 
 <body>
@@ -68,7 +69,7 @@
 									<span class="aside__item-count" data-geolocation="5">5</span>
 								</a>
 
-								<a class="aside__item active" href="#">
+								<a class="aside__item" href="calls-1.html">
 									<svg class="aside__item-icon" width="24px" height="24px">
 										<use xlink:href="img/icons/icons.svg#phone"></use>
 									</svg>
@@ -134,20 +135,20 @@
 										</summary>
 
 										<div class="spollers__body">
-											<a class="aside__spoller-item" href="#">
+											<a class="aside__spoller-item" href="audiorecords.html">
 												Аудио
 												<span class="aside__item-count" data-messengers="5">5</span>
 											</a>
 
-											<a class="aside__spoller-item" href="#">
+											<a class="aside__spoller-item" href="videorecords.html">
 												Видео
 											</a>
 
-											<a class="aside__spoller-item" href="#">
+											<a class="aside__spoller-item" href="screenrecords.html">
 												Экран
 											</a>
 
-											<a class="aside__spoller-item" href="#">
+											<a class="aside__spoller-item active" href="screenshots-1.html">
 												Скриншоты
 											</a>
 										</div>
@@ -161,7 +162,7 @@
 									Прямая трансляция
 								</a>
 
-								<a class="aside__item" href="#">
+								<a class="aside__item" href="sms.html">
 									<svg class="aside__item-icon" width="24px" height="24px">
 										<use xlink:href="img/icons/icons.svg#sms"></use>
 									</svg>
@@ -169,7 +170,7 @@
 									<span class="aside__item-count" data-sms="24">24</span>
 								</a>
 
-								<a class="aside__item" href="#">
+								<a class="aside__item" href="mediafiles-1.html">
 									<svg class="aside__item-icon" width="24px" height="24px">
 										<use xlink:href="img/icons/icons.svg#media"></use>
 									</svg>
@@ -205,21 +206,21 @@
 									История браузера
 								</a>
 
-								<a class="aside__item" href="#">
+								<a class="aside__item" href="application-1.html">
 									<svg class="aside__item-icon" width="24px" height="24px">
 										<use xlink:href="img/icons/icons.svg#app"></use>
 									</svg>
 									Приложения
 								</a>
 
-								<a class="aside__item" href="#">
+								<a class="aside__item" href="calendar.html">
 									<svg class="aside__item-icon fill-black" width="24px" height="24px">
 										<use xlink:href="img/icons/icons.svg#calendar"></use>
 									</svg>
 									Календарь
 								</a>
 
-								<a class="aside__item" href="#">
+								<a class="aside__item" href="settings.html">
 									<svg class="aside__item-icon" width="24px" height="24px">
 										<use xlink:href="img/icons/icons.svg#settings"></use>
 									</svg>
@@ -229,447 +230,212 @@
 						</div>
 					</aside>
 
-					<div class="content">
-						<div class="content__top">
-							<h1 class="content__title main-title">Последние вызовы</h1>
+					<div class="content content-slider">
+						<div class="slider-box">
+							<!-- Swiper -->
+							<div class="swiper gallery-top">
+								<div class="swiper-pagination gallery-top__pagination"></div>
 
-							<div class="content__top-controls">
-								<button class="content__top-filter">
-									<svg width="30px" height="30px">
-										<use xlink:href="img/icons/icons.svg#filter"></use>
-									</svg>
-								</button>
-							</div>
-						</div>
+								<div class="slider-controls">
+									<button class="slider-controls__download slider-controls__btn">
+										<svg class="slider-controls__icon">
+											<use xlink:href="img/icons/icons.svg#download"></use>
+										</svg>
+									</button>
 
-						<section class="last-calls__section">
-							<div class="last-calls__heading">Сегодня</div>
+									<a class="slider-controls__close slider-controls__btn" href="mediafiles-1.html">
+										<svg class="slider-controls__icon">
+											<use xlink:href="img/icons/icons.svg#x"></use>
+										</svg>
+									</a>
+								</div>
 
-							<div class="content__section last-calls__block">
-								<table class="last-calls__body">
-									<tbody>
-										<tr class="last-calls__item" data-popup="#popup-calls">
-											<td>
-												<div class="last-calls__contact-box">
-													<img class="last-calls__icon" src="img/block__last-calls/incoming.svg" alt="img">
+								<div class="swiper-wrapper">
 
-													<div class="last-calls__contact-info">
-														<div class="last-calls__contact-name">Сергей Иванович Куценко</div>
-														<div class="last-calls__contact-number">+79999999999</div>
-														<div class="last-calls__contact-timing--m">3 мин. 23 сек.</div>
-													</div>
+									<div class="swiper-slide">
+
+										<div class="swiper-slide-container">
+											<div class="swiper-slide__img-box">
+												<picture><source srcset="img/section__screenshots/slide-1.webp" type="image/webp"><img class="swiper-slide__img" src="img/section__screenshots/slide-1.jpg" loading="lazy" /></picture>
+											</div>
+											<!-- <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div> -->
+											<div class="slide-bottom">
+												<div class="slide-bottom__info">
+													<p class="slide-bottom__info-adress">Россия, г. Москва, ул. Ленина, д. 17 </p>
 												</div>
-											</td>
 
-											<td class="last-calls__timing">1 час 3 мин. 23 сек.</td>
+												<a class="slide-bottom__link" href="#" data-popup="#popup-media">
+													<span>Посмотреть</span> на карте
+													<svg>
+														<use xlink:href="img/icons/icons.svg#marker"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
 
-											<td class="last-calls__date">4 апреля 18:40</td>
+									<div class="swiper-slide">
 
-											<td class="last-calls__wrapper">
-												<div class="last-calls__date--m">04.04.23 18:40</div>
-
-												<div class="last-calls__labels">
-													<img src="img/block__last-calls/recording.svg" alt="img">
-													<img src="img/block__last-calls/marker.svg" alt="img">
+										<div class="swiper-slide-container">
+											<div class="swiper-slide__img-box">
+												<picture><source srcset="img/section__screenshots/slide-1.webp" type="image/webp"><img class="swiper-slide__img" src="img/section__screenshots/slide-1.jpg" loading="lazy" /></picture>
+											</div>
+											<!-- <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div> -->
+											<div class="slide-bottom">
+												<div class="slide-bottom__info">
+													<p class="slide-bottom__info-adress">Россия, г. Москва, ул. Ленина, д. 17 </p>
 												</div>
-											</td>
-										</tr>
 
-										<tr class="last-calls__item" data-popup="#popup-calls">
-											<td>
-												<div class="last-calls__contact-box">
-													<img class="last-calls__icon" src="img/block__last-calls/outcoming.svg" alt="img">
+												<a class="slide-bottom__link" href="#" data-popup="#popup-media">
+													<span>Посмотреть</span> на карте
+													<svg>
+														<use xlink:href="img/icons/icons.svg#marker"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
 
-													<div class="last-calls__contact-info">
-														<div class="last-calls__contact-name">Сергей Иванович Куценко</div>
-														<div class="last-calls__contact-number">+79999999999</div>
-														<div class="last-calls__contact-timing--m">3 мин. 23 сек.</div>
-													</div>
+									<div class="swiper-slide">
+
+										<div class="swiper-slide-container">
+											<div class="swiper-slide__img-box">
+												<picture><source srcset="img/section__screenshots/slide-1.webp" type="image/webp"><img class="swiper-slide__img" src="img/section__screenshots/slide-1.jpg" loading="lazy" /></picture>
+											</div>
+											<!-- <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div> -->
+											<div class="slide-bottom">
+												<div class="slide-bottom__info">
+													<p class="slide-bottom__info-adress">Россия, г. Москва, ул. Ленина, д. 17 </p>
 												</div>
-											</td>
 
-											<td class="last-calls__timing">3 мин. 44 сек.</td>
+												<a class="slide-bottom__link" href="#" data-popup="#popup-media">
+													<span>Посмотреть</span> на карте
+													<svg>
+														<use xlink:href="img/icons/icons.svg#marker"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
 
-											<td class="last-calls__date">4 апреля 18:35</td>
+									<div class="swiper-slide">
 
-											<td class="last-calls__wrapper">
-												<div class="last-calls__date--m">04.04.23 18:40</div>
-
-												<div class="last-calls__labels">
-													<img src="img/block__last-calls/recording.svg" alt="img">
+										<div class="swiper-slide-container">
+											<div class="swiper-slide__img-box">
+												<picture><source srcset="img/section__screenshots/slide-1.webp" type="image/webp"><img class="swiper-slide__img" src="img/section__screenshots/slide-1.jpg" loading="lazy" /></picture>
+											</div>
+											<!-- <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div> -->
+											<div class="slide-bottom">
+												<div class="slide-bottom__info">
+													<p class="slide-bottom__info-adress">Россия, г. Москва, ул. Ленина, д. 17 </p>
 												</div>
-											</td>
-										</tr>
 
-										<tr class="last-calls__item" data-popup="#popup-calls">
-											<td>
-												<div class="last-calls__contact-box">
-													<img class="last-calls__icon" src="img/block__last-calls/rejected.svg" alt="img">
+												<a class="slide-bottom__link" href="#" data-popup="#popup-media">
+													<span>Посмотреть</span> на карте
+													<svg>
+														<use xlink:href="img/icons/icons.svg#marker"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
 
-													<div class="last-calls__contact-info">
-														<div class="last-calls__contact-name"></div>
-														<div class="last-calls__contact-number">+79999999999</div>
-														<div class="last-calls__contact-timing--m">3 мин. 23 сек.</div>
-													</div>
+									<div class="swiper-slide">
+
+										<div class="swiper-slide-container">
+											<div class="swiper-slide__img-box">
+												<picture><source srcset="img/section__screenshots/slide-1.webp" type="image/webp"><img class="swiper-slide__img" src="img/section__screenshots/slide-1.jpg" loading="lazy" /></picture>
+											</div>
+											<!-- <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div> -->
+											<div class="slide-bottom">
+												<div class="slide-bottom__info">
+													<p class="slide-bottom__info-adress">Россия, г. Москва, ул. Ленина, д. 17 </p>
 												</div>
-											</td>
 
-											<td class="last-calls__timing"></td>
+												<a class="slide-bottom__link" href="#" data-popup="#popup-media">
+													<span>Посмотреть</span> на карте
+													<svg>
+														<use xlink:href="img/icons/icons.svg#marker"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
 
-											<td class="last-calls__date">4 апреля 18:30</td>
+									<div class="swiper-slide">
 
-											<td class="last-calls__wrapper">
-												<div class="last-calls__date--m">04.04.23 18:40</div>
-
-											</td>
-										</tr>
-
-										<tr class="last-calls__item" data-popup="#popup-calls">
-											<td>
-												<div class="last-calls__contact-box">
-													<img class="last-calls__icon" src="img/block__last-calls/inaccessible.svg" alt="img">
-
-													<div class="last-calls__contact-info">
-														<div class="last-calls__contact-name">Сергей Иванович Куценко</div>
-														<div class="last-calls__contact-number">+79999999999</div>
-														<div class="last-calls__contact-timing--m">3 мин. 23 сек.</div>
-													</div>
+										<div class="swiper-slide-container">
+											<div class="swiper-slide__img-box">
+												<picture><source srcset="img/section__screenshots/slide-1.webp" type="image/webp"><img class="swiper-slide__img" src="img/section__screenshots/slide-1.jpg" loading="lazy" /></picture>
+											</div>
+											<!-- <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div> -->
+											<div class="slide-bottom">
+												<div class="slide-bottom__info">
+													<p class="slide-bottom__info-adress">Россия, г. Москва, ул. Ленина, д. 17 </p>
 												</div>
-											</td>
 
-											<td class="last-calls__timing"></td>
+												<a class="slide-bottom__link" href="#" data-popup="#popup-media">
+													<span>Посмотреть</span> на карте
+													<svg>
+														<use xlink:href="img/icons/icons.svg#marker"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
 
-											<td class="last-calls__date">4 апреля 18:25</td>
 
-											<td class="last-calls__wrapper">
-												<div class="last-calls__date--m">04.04.23 18:40</div>
 
-											</td>
-										</tr>
+								</div>
+								<!-- Add Arrows -->
+								<div class="swiper-button-next slider-medifiles__btn"></div>
+								<div class="swiper-button-prev slider-medifiles__btn"></div>
 
-										<tr class="last-calls__item" data-popup="#popup-calls">
-											<td>
-												<div class="last-calls__contact-box">
-													<img class="last-calls__icon" src="img/block__last-calls/incoming.svg" alt="img">
 
-													<div class="last-calls__contact-info">
-														<div class="last-calls__contact-name">Сергей Иванович Куценко</div>
-														<div class="last-calls__contact-number">+79999999999</div>
-														<div class="last-calls__contact-timing--m"></div>
-													</div>
-												</div>
-											</td>
-
-											<td class="last-calls__timing">1 час 3 мин. 23 сек.</td>
-
-											<td class="last-calls__date">4 апреля 18:20</td>
-
-											<td class="last-calls__wrapper">
-												<div class="last-calls__date--m">04.04.23 18:40</div>
-
-												<div class="last-calls__labels">
-													<img src="img/block__last-calls/recording.svg" alt="img">
-												</div>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</section>
-
-						<section class="last-calls__section">
-							<div class="last-calls__heading">Вчера</div>
-
-							<div class="content__section last-calls__block">
-								<table class="last-calls__body">
-									<tbody>
-										<tr class="last-calls__item" data-popup="#popup-calls">
-											<td>
-												<div class="last-calls__contact-box">
-													<img class="last-calls__icon" src="img/block__last-calls/incoming.svg" alt="img">
-
-													<div class="last-calls__contact-info">
-														<div class="last-calls__contact-name">Сергей Иванович Куценко</div>
-														<div class="last-calls__contact-number">+79999999999</div>
-														<div class="last-calls__contact-timing--m">3 мин. 23 сек.</div>
-													</div>
-												</div>
-											</td>
-
-											<td class="last-calls__timing">1 час 3 мин. 23 сек.</td>
-
-											<td class="last-calls__date">4 апреля 18:40</td>
-
-											<td class="last-calls__wrapper">
-												<div class="last-calls__date--m">04.04.23 18:40</div>
-
-												<div class="last-calls__labels">
-													<img src="img/block__last-calls/recording.svg" alt="img">
-													<img src="img/block__last-calls/marker.svg" alt="img">
-												</div>
-											</td>
-										</tr>
-
-										<tr class="last-calls__item" data-popup="#popup-calls">
-											<td>
-												<div class="last-calls__contact-box">
-													<img class="last-calls__icon" src="img/block__last-calls/outcoming.svg" alt="img">
-
-													<div class="last-calls__contact-info">
-														<div class="last-calls__contact-name">Сергей Иванович Куценко</div>
-														<div class="last-calls__contact-number">+79999999999</div>
-														<div class="last-calls__contact-timing--m">3 мин. 23 сек.</div>
-													</div>
-												</div>
-											</td>
-
-											<td class="last-calls__timing">3 мин. 44 сек.</td>
-
-											<td class="last-calls__date">4 апреля 18:35</td>
-
-											<td class="last-calls__wrapper">
-												<div class="last-calls__date--m">04.04.23 18:40</div>
-
-												<div class="last-calls__labels">
-													<img src="img/block__last-calls/recording.svg" alt="img">
-												</div>
-											</td>
-										</tr>
-
-										<tr class="last-calls__item" data-popup="#popup-calls">
-											<td>
-												<div class="last-calls__contact-box">
-													<img class="last-calls__icon" src="img/block__last-calls/rejected.svg" alt="img">
-
-													<div class="last-calls__contact-info">
-														<div class="last-calls__contact-name"></div>
-														<div class="last-calls__contact-number">+79999999999</div>
-														<div class="last-calls__contact-timing--m">3 мин. 23 сек.</div>
-													</div>
-												</div>
-											</td>
-
-											<td class="last-calls__timing"></td>
-
-											<td class="last-calls__date">4 апреля 18:30</td>
-
-											<td class="last-calls__wrapper">
-												<div class="last-calls__date--m">04.04.23 18:40</div>
-
-											</td>
-										</tr>
-
-										<tr class="last-calls__item" data-popup="#popup-calls">
-											<td>
-												<div class="last-calls__contact-box">
-													<img class="last-calls__icon" src="img/block__last-calls/inaccessible.svg" alt="img">
-
-													<div class="last-calls__contact-info">
-														<div class="last-calls__contact-name">Сергей Иванович Куценко</div>
-														<div class="last-calls__contact-number">+79999999999</div>
-														<div class="last-calls__contact-timing--m">3 мин. 23 сек.</div>
-													</div>
-												</div>
-											</td>
-
-											<td class="last-calls__timing"></td>
-
-											<td class="last-calls__date">4 апреля 18:25</td>
-
-											<td class="last-calls__wrapper">
-												<div class="last-calls__date--m">04.04.23 18:40</div>
-
-											</td>
-										</tr>
-
-										<tr class="last-calls__item" data-popup="#popup-calls">
-											<td>
-												<div class="last-calls__contact-box">
-													<img class="last-calls__icon" src="img/block__last-calls/incoming.svg" alt="img">
-
-													<div class="last-calls__contact-info">
-														<div class="last-calls__contact-name">Сергей Иванович Куценко</div>
-														<div class="last-calls__contact-number">+79999999999</div>
-														<div class="last-calls__contact-timing--m"></div>
-													</div>
-												</div>
-											</td>
-
-											<td class="last-calls__timing">1 час 3 мин. 23 сек.</td>
-
-											<td class="last-calls__date">4 апреля 18:20</td>
-
-											<td class="last-calls__wrapper">
-												<div class="last-calls__date--m">04.04.23 18:40</div>
-
-												<div class="last-calls__labels">
-													<img src="img/block__last-calls/recording.svg" alt="img">
-												</div>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</section>
-
-						<section class="last-calls__section">
-							<div class="last-calls__heading">2 апреля</div>
-
-							<div class="content__section last-calls__block">
-								<table class="last-calls__body">
-									<tbody>
-										<tr class="last-calls__item" data-popup="#popup-calls">
-											<td>
-												<div class="last-calls__contact-box">
-													<img class="last-calls__icon" src="img/block__last-calls/incoming.svg" alt="img">
-
-													<div class="last-calls__contact-info">
-														<div class="last-calls__contact-name">Сергей Иванович Куценко</div>
-														<div class="last-calls__contact-number">+79999999999</div>
-														<div class="last-calls__contact-timing--m">3 мин. 23 сек.</div>
-													</div>
-												</div>
-											</td>
-
-											<td class="last-calls__timing">1 час 3 мин. 23 сек.</td>
-
-											<td class="last-calls__date">4 апреля 18:40</td>
-
-											<td class="last-calls__wrapper">
-												<div class="last-calls__date--m">04.04.23 18:40</div>
-
-												<div class="last-calls__labels">
-													<img src="img/block__last-calls/recording.svg" alt="img">
-													<img src="img/block__last-calls/marker.svg" alt="img">
-												</div>
-											</td>
-										</tr>
-
-										<tr class="last-calls__item" data-popup="#popup-calls">
-											<td>
-												<div class="last-calls__contact-box">
-													<img class="last-calls__icon" src="img/block__last-calls/outcoming.svg" alt="img">
-
-													<div class="last-calls__contact-info">
-														<div class="last-calls__contact-name">Сергей Иванович Куценко</div>
-														<div class="last-calls__contact-number">+79999999999</div>
-														<div class="last-calls__contact-timing--m">3 мин. 23 сек.</div>
-													</div>
-												</div>
-											</td>
-
-											<td class="last-calls__timing">3 мин. 44 сек.</td>
-
-											<td class="last-calls__date">4 апреля 18:35</td>
-
-											<td class="last-calls__wrapper">
-												<div class="last-calls__date--m">04.04.23 18:40</div>
-
-												<div class="last-calls__labels">
-													<img src="img/block__last-calls/recording.svg" alt="img">
-												</div>
-											</td>
-										</tr>
-
-										<tr class="last-calls__item" data-popup="#popup-calls">
-											<td>
-												<div class="last-calls__contact-box">
-													<img class="last-calls__icon" src="img/block__last-calls/rejected.svg" alt="img">
-
-													<div class="last-calls__contact-info">
-														<div class="last-calls__contact-name"></div>
-														<div class="last-calls__contact-number">+79999999999</div>
-														<div class="last-calls__contact-timing--m">3 мин. 23 сек.</div>
-													</div>
-												</div>
-											</td>
-
-											<td class="last-calls__timing"></td>
-
-											<td class="last-calls__date">4 апреля 18:30</td>
-
-											<td class="last-calls__wrapper">
-												<div class="last-calls__date--m">04.04.23 18:40</div>
-
-											</td>
-										</tr>
-
-										<tr class="last-calls__item" data-popup="#popup-calls">
-											<td>
-												<div class="last-calls__contact-box">
-													<img class="last-calls__icon" src="img/block__last-calls/inaccessible.svg" alt="img">
-
-													<div class="last-calls__contact-info">
-														<div class="last-calls__contact-name">Сергей Иванович Куценко</div>
-														<div class="last-calls__contact-number">+79999999999</div>
-														<div class="last-calls__contact-timing--m">3 мин. 23 сек.</div>
-													</div>
-												</div>
-											</td>
-
-											<td class="last-calls__timing"></td>
-
-											<td class="last-calls__date">4 апреля 18:25</td>
-
-											<td class="last-calls__wrapper">
-												<div class="last-calls__date--m">04.04.23 18:40</div>
-
-											</td>
-										</tr>
-
-										<tr class="last-calls__item" data-popup="#popup-calls">
-											<td>
-												<div class="last-calls__contact-box">
-													<img class="last-calls__icon" src="img/block__last-calls/incoming.svg" alt="img">
-
-													<div class="last-calls__contact-info">
-														<div class="last-calls__contact-name">Сергей Иванович Куценко</div>
-														<div class="last-calls__contact-number">+79999999999</div>
-														<div class="last-calls__contact-timing--m"></div>
-													</div>
-												</div>
-											</td>
-
-											<td class="last-calls__timing">1 час 3 мин. 23 сек.</td>
-
-											<td class="last-calls__date">4 апреля 18:20</td>
-
-											<td class="last-calls__wrapper">
-												<div class="last-calls__date--m">04.04.23 18:40</div>
-
-												<div class="last-calls__labels">
-													<img src="img/block__last-calls/recording.svg" alt="img">
-												</div>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</section>
-
-						<div class="pagination">
-							<a class="pagination__prev" href="#">
-								<svg width="10" height="20">
-									<use xlink:href="img/icons/icons.svg#arrow-prev"></use>
-								</svg>
-							</a>
-
-							<div class="pagination__body">
-								<a class="pagination__item active" href="#">1</a>
-								<a class="pagination__item" href="#">2</a>
-								<a class="pagination__item" href="#">3</a>
-								<a class="pagination__item" href="#">4</a>
-								<a class="pagination__item" href="#">5</a>
-								<a class="pagination__item" href="#">6</a>
-								<a class="pagination__item" href="#">7</a>
-								<a class="pagination__item" href="#">8</a>
 							</div>
 
-							<a class="pagination__next" href="#">
-								<svg width="10" height="20">
-									<use xlink:href="img/icons/icons.svg#arrow-next"></use>
-								</svg>
-							</a>
+							<!-------------------------------------------------------------->
+							<div class="swiper gallery-thumbs">
+								<div class="swiper-wrapper">
+
+									<div class="swiper-slide">
+										<div class="swiper-thumbs-container">
+											<picture><source srcset="img/section__screenshots/1.webp" type="image/webp"><img class="swiper-thumbs-img" src="img/section__screenshots/1.jpg" loading="lazy" /></picture>
+										</div>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="swiper-thumbs-container">
+											<picture><source srcset="img/section__screenshots/1.webp" type="image/webp"><img class="swiper-thumbs-img" src="img/section__screenshots/1.jpg" loading="lazy" /></picture>
+										</div>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="swiper-thumbs-container">
+											<picture><source srcset="img/section__screenshots/1.webp" type="image/webp"><img class="swiper-thumbs-img" src="img/section__screenshots/1.jpg" loading="lazy" /></picture>
+										</div>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="swiper-thumbs-container">
+											<picture><source srcset="img/section__screenshots/1.webp" type="image/webp"><img class="swiper-thumbs-img" src="img/section__screenshots/1.jpg" loading="lazy" /></picture>
+										</div>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="swiper-thumbs-container">
+											<picture><source srcset="img/section__screenshots/1.webp" type="image/webp"><img class="swiper-thumbs-img" src="img/section__screenshots/1.jpg" loading="lazy" /></picture>
+										</div>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="swiper-thumbs-container">
+											<picture><source srcset="img/section__screenshots/1.webp" type="image/webp"><img class="swiper-thumbs-img" src="img/section__screenshots/1.jpg" loading="lazy" /></picture>
+										</div>
+									</div>
+
+								</div>
+							</div>
 						</div>
 
 					</div>
@@ -1560,6 +1326,56 @@
 		</div>
 	</div>
 	<!-- /popup-screenrecords-map -->
+
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20230801043631"></script>
+
+	<script>
+		// -- swiper-gallery-top ----------------------------------------------
+		var galleryTop = new Swiper('.gallery-top', {
+			spaceBetween: 0,
+			loop: true,
+			loopedSlides: 4,
+			autoHeight: true,
+
+			pagination: {
+				el: ".swiper-pagination",
+				// type: "fraction",
+				type: "custom",
+				renderCustom: function(swiper, current, total) {
+					return current + ' из ' + (total);
+				}
+			},
+
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+
+		var galleryThumbs = new Swiper('.gallery-thumbs', {
+			spaceBetween: 6,
+			// centeredSlides: true,
+			centeredSlides: false,
+			slidesPerView: '4',
+			touchRatio: 0.2,
+			slideToClickedSlide: true,
+			loop: true,
+			loopedSlides: 4,
+
+			// Брейкпоінти
+			breakpoints: {
+				575.98: {
+					spaceBetween: 10,
+				},
+
+			},
+		});
+
+		galleryTop.controller.control = galleryThumbs;
+		galleryThumbs.controller.control = galleryTop;
+		// -- /swiper-gallery-top ----------------------------------------------
+	</script>
 
 
 	<script src="js/app.min.js?_v=20230801043631"></script>
