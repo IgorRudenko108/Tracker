@@ -1959,10 +1959,18 @@ body::after {
   letter-spacing: -0.06px;
   margin-bottom: 10px;
   cursor: pointer;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
 }
 
 .last-calls__item:last-child {
   margin: 0;
+}
+
+.last-calls__item:hover {
+  background-color: #edf1f4;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
 }
 
 .last-calls__item td:first-child {
