@@ -1017,6 +1017,14 @@ body::after {
   border-bottom: 1px solid #E1E6EA !important;
 }
 
+.spollers__title.spollers-active {
+  color: #135E98;
+}
+
+.spollers__title.spollers-active svg {
+  stroke: #135E98;
+}
+
 .spollers__body {
   max-width: 200px;
 }
@@ -3942,6 +3950,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
           transform: translateY(-50%);
   display: block;
   z-index: 99;
+  cursor: pointer;
 }
 
 .filter-btn svg {
@@ -3950,6 +3959,13 @@ input[type=time]::-webkit-calendar-picker-indicator {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 24px;
           flex: 0 0 24px;
+}
+
+.filter-btn.filter-open .filter-wrapper {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .filter-wrapper {
@@ -3985,6 +4001,7 @@ input[type=time]::-webkit-calendar-picker-indicator {
   border-bottom: 1px solid #E1E6EA;
   -webkit-transition: color 0.1s ease-in-out;
   transition: color 0.1s ease-in-out;
+  width: 100%;
 }
 
 .filter-body__link:hover {
