@@ -1378,11 +1378,11 @@
         }));
         if (isMobile.any()) {
             document.body.classList.add("_touch");
-            let mapBox = document.querySelectorAll(".last-location__maps--m");
+            let mapBox = document.querySelectorAll(".dropdown");
             if (mapBox.length > 0) for (let index = 0; index < mapBox.length; index++) {
                 const mapItem = mapBox[index];
                 mapItem.addEventListener("click", (function(e) {
-                    mapItem.parentElement.classList.toggle("map-open");
+                    mapItem.classList.toggle("dropdown-open");
                 }));
             }
         } else document.body.classList.add("_pc");

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230803154518">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230805010806">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -234,11 +234,58 @@
 							<h1 class="content__title main-title">Медиафайлы</h1>
 
 							<div class="content__top-controls">
-								<button class="content__top-filter">
-									<svg width="30px" height="30px">
+								<div class="content__top-filter drop-menu dropdown">
+									<svg width="24" height="24">
 										<use xlink:href="img/icons/icons.svg#filter"></use>
 									</svg>
-								</button>
+
+									<div class="drop-wrapper dropdown-list">
+										<div class="filter-body">
+
+											<div class="filter-body__check">
+												<div class="checkbox broadcast__controls-checkbox">
+													<input id="check-1" type="checkbox" name="agreement" class="checkbox__input">
+													<label for="check-1" class="checkbox__label"><span></span></label>
+												</div>
+												<a class="filter-body__link filter-body__check-link" href="#">Последние</a>
+											</div>
+
+											<div class="filter-body__check">
+												<div class="checkbox broadcast__controls-checkbox">
+													<input id="check-2" type="checkbox" name="agreement" class="checkbox__input">
+													<label for="check-2" class="checkbox__label"><span></span></label>
+												</div>
+												<a class="filter-body__link filter-body__check-link" href="#">Камера</a>
+											</div>
+
+											<div class="filter-body__check">
+												<div class="checkbox broadcast__controls-checkbox">
+													<input id="check-3" type="checkbox" name="agreement" class="checkbox__input">
+													<label for="check-3" class="checkbox__label"><span></span></label>
+												</div>
+												<a class="filter-body__link filter-body__check-link" href="#">Загрузки</a>
+											</div>
+
+											<div class="filter-body__check">
+												<div class="checkbox broadcast__controls-checkbox">
+													<input id="check-4" type="checkbox" name="agreement" class="checkbox__input">
+													<label for="check-4" class="checkbox__label"><span></span></label>
+												</div>
+												<a class="filter-body__link filter-body__check-link" href="#">Telegram</a>
+											</div>
+
+											<div class="filter-body__check">
+												<div class="checkbox broadcast__controls-checkbox">
+													<input id="check-5" type="checkbox" name="agreement" class="checkbox__input">
+													<label for="check-5" class="checkbox__label"><span></span></label>
+												</div>
+												<a class="filter-body__link filter-body__check-link" href="#">Альбом 1</a>
+											</div>
+
+											<button class="filter-body__btn">Применить</button>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 
@@ -563,10 +610,10 @@
 												</a>
 											</div>
 
-											<button class="last-location__maps--m" href="#">
+											<button class="dropdown" href="#">
 												<img class="last-location__maps-img--m" src="img/common-icons/map.svg" alt="img">
 
-												<div class="last-location__maps-list--m">
+												<div class="dropdown-list">
 													<a class="last-location__maps-link--m" href="#">
 														<picture><source data-srcset="img/block__last-location/map-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="last-location__map-icon--m" data-src="img/block__last-location/map-1.png" alt="img"></picture>
 														<span class="last-location__map-name--m" style="color: #FF3333;">Яндекс</span>
@@ -710,10 +757,10 @@
 												</a>
 											</div>
 
-											<button class="last-location__maps--m" href="#">
+											<button class="dropdown" href="#">
 												<img class="last-location__maps-img--m" src="img/common-icons/map.svg" alt="img">
 
-												<div class="last-location__maps-list--m">
+												<div class="dropdown-list">
 													<a class="last-location__maps-link--m" href="#">
 														<picture><source data-srcset="img/block__last-location/map-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="last-location__map-icon--m" data-src="img/block__last-location/map-1.png" alt="img"></picture>
 														<span class="last-location__map-name--m" style="color: #FF3333;">Яндекс</span>
@@ -847,10 +894,10 @@
 												</a>
 											</div>
 
-											<button class="last-location__maps--m" href="#">
+											<button class="dropdown" href="#">
 												<img class="last-location__maps-img--m" src="img/common-icons/map.svg" alt="img">
 
-												<div class="last-location__maps-list--m">
+												<div class="dropdown-list">
 													<a class="last-location__maps-link--m" href="#">
 														<picture><source data-srcset="img/block__last-location/map-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="last-location__map-icon--m" data-src="img/block__last-location/map-1.png" alt="img"></picture>
 														<span class="last-location__map-name--m" style="color: #FF3333;">Яндекс</span>
@@ -1059,10 +1106,10 @@
 												</a>
 											</div>
 
-											<button class="last-location__maps--m" href="#">
+											<button class="dropdown" href="#">
 												<img class="last-location__maps-img--m" src="img/common-icons/map.svg" alt="img">
 
-												<div class="last-location__maps-list--m">
+												<div class="dropdown-list">
 													<a class="last-location__maps-link--m" href="#">
 														<picture><source data-srcset="img/block__last-location/map-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="last-location__map-icon--m" data-src="img/block__last-location/map-1.png" alt="img"></picture>
 														<span class="last-location__map-name--m" style="color: #FF3333;">Яндекс</span>
@@ -1271,10 +1318,10 @@
 												</a>
 											</div>
 
-											<button class="last-location__maps--m" href="#">
+											<button class="dropdown" href="#">
 												<img class="last-location__maps-img--m" src="img/common-icons/map.svg" alt="img">
 
-												<div class="last-location__maps-list--m">
+												<div class="dropdown-list">
 													<a class="last-location__maps-link--m" href="#">
 														<picture><source data-srcset="img/block__last-location/map-1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="last-location__map-icon--m" data-src="img/block__last-location/map-1.png" alt="img"></picture>
 														<span class="last-location__map-name--m" style="color: #FF3333;">Яндекс</span>
@@ -1304,7 +1351,7 @@
 	<!-- /popup-screenrecords-map -->
 
 
-	<script src="js/app.min.js?_v=20230803154518"></script>
+	<script src="js/app.min.js?_v=20230805010806"></script>
 </body>
 
 </html>
