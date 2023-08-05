@@ -315,6 +315,15 @@ body {
   padding: 10px 15px;
 }
 
+.select._select-open {
+  position: relative;
+  z-index: 999999;
+}
+
+.select._select-open .select__options {
+  z-index: 999999;
+}
+
 body::after {
   content: "";
   background-color: rgba(0, 0, 0, 0.5);
